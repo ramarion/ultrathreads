@@ -1,17 +1,24 @@
 {
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
     "settings": {
         "color": {
+            "defaultPalette": true,
             "palette": [
                 {
+                    "color": "#000000",
                     "name": "Black",
-                    "slug": "black",
-                    "color": "#000000"
+                    "slug": "black"
                 },
                 {
+                    "color": "#ffffff",
                     "name": "White",
-                    "slug": "white",
-                    "color": "#ffffff"
+                    "slug": "white"
+                },
+                {
+                    "color": "#0693e3",
+                    "name": "Iceblue",
+                    "slug": "iceblue"
                 }
             ]
         }
