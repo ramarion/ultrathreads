@@ -13,3 +13,8 @@ function ultrathreads_enqueue_block_editor_assets() {
     );
 }
 add_action( 'enqueue_block_editor_assets', 'ultrathreads_enqueue_block_editor_assets' );
+
+function ultrathreads_enqueue_block_assets() {
+    wp_enqueue_style( 'block-editor-style', plugins_url( 'style.css', __FILE__ ) );
+}
+add_action( 'enqueue_block_assets', 'ultrathreads_enqueue_block_assets' );
