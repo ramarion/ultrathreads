@@ -1,3 +1,12 @@
-.is-style-fancy-quote {
+.wp-block-quote {
+    color:green;
+}
+
+
+.wp-block-quote.is-style-fancy-quote {
     color: tomato;
+}
+
+.wp-block-quote.is-style-large {
+    color: #0693e3;
 }
