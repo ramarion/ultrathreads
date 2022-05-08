@@ -3,7 +3,7 @@
     "version": 2,
     "settings": {
         "color": {
-            "defaultPalette": true,
+            "defaultPalette": false,
             "palette": [
                 {
                     "color": "#000000",
@@ -19,6 +19,11 @@
                     "color": "#0693e3",
                     "name": "Iceblue",
                     "slug": "iceblue"
+                },
+                {
+                    "color": "#FFC125"	,
+                    "name": "GoldenRod",
+                    "slug": "goldenrod"
                 }
             ]
         }
