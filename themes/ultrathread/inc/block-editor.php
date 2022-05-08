@@ -4,7 +4,7 @@
  *
  * @package UltraThreads
  */
-function ultrathreads_enqueue_block_editor_assets() {
+function ultrathread_enqueue_block_editor_assets() {
     wp_enqueue_script(
         'block-editor-script',
         get_template_directory_uri() . '/assets/js/block-editor.js',
@@ -12,12 +12,12 @@ function ultrathreads_enqueue_block_editor_assets() {
         filemtime( get_template_directory_uri() . '/assets/js/block-editor.js' )
     );
 }
-add_action( 'enqueue_block_editor_assets', 'ultrathreads_enqueue_block_editor_assets' );
+add_action( 'enqueue_block_editor_assets', 'ultrathread_enqueue_block_editor_assets' );
 
-function ultrathreads_enqueue_block_assets() {
+function ultrathread_enqueue_block_assets() {
     wp_enqueue_style(
         'block-editor-style', 
         get_template_directory_uri() . '/assets/css/block-editor.css' 
     );
 }
-add_action( 'enqueue_block_assets', 'ultrathreads_enqueue_block_assets' );
+add_action( 'enqueue_block_assets', 'ultrathread_enqueue_block_assets' );
