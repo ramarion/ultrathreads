@@ -1,0 +1,32 @@
+.wp-block-quote {
+    color:green;
+}
+
+
+.wp-block-quote.is-style-fancy-quote {
+    color: tomato;
+}
+
+.wp-block-quote.is-style-large {
+    color: #0693e3;
+}
+
+.entry-content > * {
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.entry-header > * {
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.alignwide{
+    max-width:1200px;
+}
+
+.alignfull{
+    width:100%;
+}

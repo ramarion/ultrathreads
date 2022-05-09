@@ -1,0 +1,35 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "color": {
+            "defaultPalette": false,
+            "palette": [
+                {
+                    "color": "#000000",
+                    "name": "Black",
+                    "slug": "black"
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "White",
+                    "slug": "white"
+                },
+                {
+                    "color": "#0693e3",
+                    "name": "Iceblue",
+                    "slug": "iceblue"
+                },
+                {
+                    "color": "#FFC125"	,
+                    "name": "GoldenRod",
+                    "slug": "goldenrod"
+                }
+            ]
+        },
+        "layout": {
+            "contentSize": "1000px",
+            "wideSize": "1200px"
+        }
+    }
+}
