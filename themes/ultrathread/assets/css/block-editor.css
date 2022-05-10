@@ -2,6 +2,10 @@
     color:green;
 }
 
+.wp-block-site-logo.is-style-default {
+    width:150px;
+}
+
 
 .wp-block-quote.is-style-fancy-quote {
     color: tomato;
@@ -30,3 +34,30 @@
 .alignfull{
     width:100%;
 }
+
+.home{
+    padding:20px;
+}
+
+.custom-logo{width:100px;}
+
+.menu-toggle{
+    display:none;
+}
+
+.site-header{
+    background-color:#003e1f;
+    color: #f79824;
+    display:flex;
+    
+}
+
+.site-footer{
+    background-color:#003e1f;
+    color: #f79824;
+    text-align:center;
+    height:200px;
+    
+}
+
+.site-info a{text-decoration: none; color: #fff;}
