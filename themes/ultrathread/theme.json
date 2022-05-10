@@ -51,6 +51,11 @@
                     "slug": "deeppink"
                 },
                 {
+                    "color": "#003e1f"	,
+                    "name": "Greenygreen",
+                    "slug": "greenygreen"
+                },
+                {
                     "color": "#FFFF00"	,
                     "name": "yellow",
                     "slug": "yellow"
