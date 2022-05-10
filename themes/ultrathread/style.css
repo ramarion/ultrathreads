@@ -21,4 +21,11 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
-
+body{
+    padding:20px;
+}
+.main-navigation ul,.menu-toggle li.search-item{
+    list-style:none;
+    margin:0;
+    padding-left:0
+}
