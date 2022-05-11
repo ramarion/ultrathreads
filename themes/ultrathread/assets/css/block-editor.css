@@ -37,32 +37,57 @@
 
 
 /* WP BLOCK HEADING */
-.wp-block-heading{
+h1.wp-block-heading{
     font-family: 'Oswald', sans-serif;
     color: #0693e3;
 }
+h1{
+    font-family: 'Oswald', sans-serif;
+    color: #0693e3;
+}
+
 /* WP BLOCK H2 */
+h2 {
+    font-family: Gillsans, sans-serif;
+    color: #e34806;
+}
 h2.wp-block-heading {
     font-family: Gillsans, sans-serif;
     color: #e34806;
 }
 
 /* WP BLOCK H3 */
+h3 {
+    font-family: Verdana, sans-serif;
+    color: #023a1e;
+}
 h3.wp-block-heading {
     font-family: Verdana, sans-serif;
-    color: #003e1f;
+    color: #023a1e;
 }
 /* WP BLOCK H4 */
+h4 {
+    font-family: Helvetica, sans-serif;
+    color: #fff;
+}
 h4.wp-block-heading {
     font-family: Helvetica, sans-serif;
     color: #fff;
 }
 /* WP BLOCK H5 */
+h5 {
+    font-family: 'Bebas Neue', cursive;
+    color: #71C671;
+}
 h5.wp-block-heading {
     font-family: 'Bebas Neue', cursive;
     color: #71C671;
 }
 /* WP BLOCK H6 */
+h6 {
+    font-family: 'Allison', cursive;
+    color: #000;
+}
 h6.wp-block-heading {
     font-family: 'Allison', cursive;
     color: #000;
@@ -99,19 +124,3 @@ h6.wp-block-heading {
     display:none;
 }
 
-.site-header{
-    background-color:#003e1f;
-    color: #f79824;
-    display:flex;
-    
-}
-
-.site-footer{
-    background-color:#003e1f;
-    color: #f79824;
-    text-align:center;
-    height:200px;
-    
-}
-
-.site-info a{text-decoration: none; color: #fff;}
