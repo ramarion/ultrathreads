@@ -93,6 +93,12 @@ h6.wp-block-heading {
     color: #000;
 }
 
+.wp-block-image.is-style-default{
+    width:1200px;
+    border-top-left-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+   
+}
 
 .entry-content > * {
     max-width:1200px;
