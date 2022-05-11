@@ -1,9 +1,13 @@
 .wp-block-quote {
     color:green;
+    font-family: Gillsans,sans-serif;
 }
 
 .wp-block-site-logo.is-style-default {
     width:150px;
+    display: flex;
+    justify-content: center;
+    
 }
 
 
