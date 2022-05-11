@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Oswald&display=swap');
 
 /* WP BLOCK QUOTES */
 .wp-block-quote {
@@ -40,10 +41,31 @@
     font-family: 'Oswald', sans-serif;
     color: #0693e3;
 }
-/* WP BLOCK QUOTES */
+/* WP BLOCK H2 */
 h2.wp-block-heading {
     font-family: Gillsans, sans-serif;
     color: #e34806;
+}
+
+/* WP BLOCK H3 */
+h3.wp-block-heading {
+    font-family: Gillsans, sans-serif;
+    color: #003e1f;
+}
+/* WP BLOCK H4 */
+h4.wp-block-heading {
+    font-family: Gillsans, sans-serif;
+    color: #fff;
+}
+/* WP BLOCK H5 */
+h5.wp-block-heading {
+    font-family: Gillsans, sans-serif;
+    color: #71C671;
+}
+/* WP BLOCK H6 */
+h6.wp-block-heading {
+    font-family: Gillsans, sans-serif;
+    color: #000;
 }
 
 
