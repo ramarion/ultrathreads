@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/* WP BLOCK QUOTES */
 .wp-block-quote {
     color:green;
     font-family: Gillsans,sans-serif;
 }
-
+/* WP BLOCK SITE LOGO */
 .wp-block-site-logo.is-style-default {
     width:150px;
     display: flex;
     justify-content: center;
     
 }
-
+/* WP BLOCK BUTTONS */
 .wp-block-button__link {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color: #228B22;
@@ -17,8 +20,11 @@
     border-radius:50px;
     font-family: Gillsans,sans-serif;
 }
+.wp-block-button__link:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
-
+/* WP BLOCK QUOTES */
 .wp-block-quote.is-style-fancy-quote {
     color: tomato;
 }
@@ -26,10 +32,18 @@
 .wp-block-quote.is-style-large {
     color: #0693e3;
 }
+/* WP BLOCK QUOTES */
 
-.wp-block-heading h3 {
-    font-family: Gillsans,sans-serif;
+
+/* WP BLOCK HEADING */
+.wp-block-heading{
+    font-family: 'Oswald', sans-serif;
     color: #0693e3;
+}
+/* WP BLOCK QUOTES */
+h2.wp-block-heading {
+    font-family: Gillsans, sans-serif;
+    color: #e34806;
 }
 
 
