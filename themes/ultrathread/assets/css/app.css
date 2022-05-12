@@ -12,6 +12,7 @@ body{
     font-family: 'Bebas Neue', cursive;
 }
 
+
 .site-footer{
     background-color:#003e1f;
     color: #f79824;
@@ -22,7 +23,7 @@ body{
 
 .site-info a{text-decoration: none; color: #fff;}
 
-.main-navigation {float: right;}
+.main-navigation {margin-top: 30px;margin-left:700px;}
 .menu-item a{
     color: #f79824;
     font-family: "Montserrat";
