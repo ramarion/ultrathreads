@@ -12,6 +12,10 @@ body{
     font-family: 'Bebas Neue', cursive;
 }
 
+.site-branding{
+    padding-left:30px;
+    padding-top: 10px;
+}
 
 .site-footer{
     background-color:#003e1f;
@@ -33,6 +37,9 @@ body{
     font-family: "Montserrat";
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 19px;
-    
+    font-size: 19px;    
+}
+
+.entry-title{
+    color:#003e1f;
 }
