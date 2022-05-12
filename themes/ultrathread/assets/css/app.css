@@ -23,7 +23,11 @@ body{
 
 .site-info a{text-decoration: none; color: #fff;}
 
-.main-navigation {margin-top: 30px;margin-left:700px;}
+.main-navigation {
+    margin-top: 30px;
+    margin-left:700px;
+}
+
 .menu-item a{
     color: #f79824;
     font-family: "Montserrat";

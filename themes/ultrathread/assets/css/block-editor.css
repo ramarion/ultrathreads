@@ -97,7 +97,10 @@ h6.wp-block-heading {
     width:1200px;
     border-top-left-radius: 10px; 
     border-bottom-right-radius: 10px; 
-   
+}
+
+.wp-block-paragraph{
+    font-family: Helvetica, sans-serif; 
 }
 
 .entry-content > * {
