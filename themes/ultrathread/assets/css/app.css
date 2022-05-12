@@ -1,5 +1,5 @@
 body{
-    background-color: bisque ;
+    background-color: #ffe4c4 ;
 }
 
 .site-header{
@@ -28,7 +28,7 @@ body{
 .site-info a{text-decoration: none; color: #fff;}
 
 .main-navigation {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left:700px;
 }
 

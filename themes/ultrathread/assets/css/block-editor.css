@@ -16,8 +16,8 @@
 /* WP BLOCK BUTTONS */
 .wp-block-button__link {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    background-color: #228B22;
-    color:#f4e2b4;
+    background-color: #ffc125;
+    color:#003e1f;
     border-radius:50px;
     font-family: Gillsans,sans-serif;
 }
