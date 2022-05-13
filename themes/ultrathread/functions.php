@@ -50,6 +50,7 @@ function ultrathread_setup() {
 	register_nav_menus(
 		array(
 			'menu-primary' => esc_html__( 'Primary', 'ultrathread' ),
+			'menu-secondary' => __('Secondary', 'ultrathread' )
 		)
 	);
 
@@ -120,9 +121,22 @@ function ultrathread_widgets_init() {
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>',
 		)
-	);
+		);
+		register_sidebar(
+			array(
+				'name'          => esc_html__( 'Footer', 'ultrathread' ),
+				'id'            => 'footer-primary',
+				'description'   => esc_html__( 'Add widgets here.', 'ultrathread' ),
+				'before_widget' => '<section id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</section>',
+				'before_title'  => '<h2 class="widget-title">',
+				'after_title'   => '</h2>',
+			)
+			);
+	
 }
 add_action( 'widgets_init', 'ultrathread_widgets_init' );
+
 
 /**
  * Enqueue scripts and styles.

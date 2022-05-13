@@ -9,6 +9,7 @@
  * @package UltraThreads
  */
 
+
 ?>
 
 	<footer id="colophon" class="site-footer">
@@ -25,6 +26,18 @@
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'ultrathread' ), 'ultrathread', '<a href="https://raoulexnurse.com">Raoulex Nurse</a>' );
 				?>
 		</div><!-- .site-info -->
+
+		<nav id="site-navigation" class="main-navigation">
+			<button class="menu-toggle" aria-controls="secondary-menu" aria-expanded="false"><?php esc_html_e( 'Secondary Menu', 'ultrathread' ); ?></button>
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-secondary',
+					'menu_id'        => 'secondary-menu',
+				)
+			);
+			?>
+		</nav><!-- #site-navigation -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
