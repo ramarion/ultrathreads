@@ -122,17 +122,20 @@ function ultrathread_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 		);
-		register_sidebar(
-			array(
-				'name'          => esc_html__( 'Footer', 'ultrathread' ),
-				'id'            => 'footer-primary',
-				'description'   => esc_html__( 'Add widgets here.', 'ultrathread' ),
-				'before_widget' => '<section id="%1$s" class="widget %2$s">',
-				'after_widget'  => '</section>',
-				'before_title'  => '<h2 class="widget-title">',
-				'after_title'   => '</h2>',
-			)
-			);
+			// Regsiter 4 footer widgets.
+	    register_sidebars(
+		4,
+		array(
+			/* translators: %d: Footer Widget count. */
+			'name'          => esc_html__( 'Footer Widget %d', 'ultrathread' ),
+			'id'            => 'footer-widget',
+			'description'   => esc_html__( 'Add widgets here.', 'ultrathread' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h6 class="widget-title">',
+			'after_title'   => '</h6>',
+		)
+	);
 	
 }
 add_action( 'widgets_init', 'ultrathread_widgets_init' );
