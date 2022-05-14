@@ -15,7 +15,7 @@
 	<footer id="colophon" class="site-footer">
 	<?php if ( is_active_sidebar( 'footer-widget' ) || is_active_sidebar( 'footer-widget-2' ) || is_active_sidebar( 'footer-widget-3' ) || is_active_sidebar( 'footer-widget-4' ) ) : ?>
 			<div class="site-footer-top">
-				<div class="ascendoor-wrapper">
+				<div class="ultrathread-wrapper">
 					<div class="footer-widgets-wrapper"> 
 						<div class="footer-widget-single">
 							<?php dynamic_sidebar( 'footer-widget' ); ?>

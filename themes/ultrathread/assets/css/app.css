@@ -21,8 +21,13 @@ body{
     background-color:#003e1f;
     color: #f79824;
     text-align:center;
-    height:200px;
     
+}
+
+.site-footer-top{
+    background-color:#71C671;
+    color: #f79824;
+    padding: 6.25rem 0 2.5rem;
 }
 
 .site-info a{text-decoration: none; color: #fff;}
