@@ -1,0 +1,82 @@
+body{
+    background-color: #ffe4c4 ;
+}
+
+.site-header{
+    background-color:#003e1f;
+    color: #f79824;
+    display:flex;
+    padding: 10px;
+}
+.site-description{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.site-branding{
+    padding-left:30px;
+    padding-top: 10px;
+}
+
+/* footer CSS start
+--------------------------------------------- */
+.site-footer-bottom{
+    background-color:#003e1f;
+    color: #f79824;
+    text-align:center;
+    padding: 15px 0;
+}
+
+.site-footer-top{
+    background-color:#2a752a;
+    color: #f79824;
+    padding: 1.25rem 30px 1.5rem;
+}
+
+.site-footer-bottom-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.site-info a{text-decoration: none; color: #fff;}
+
+.footer-widgets-wrapper {
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+/* footer CSS end
+--------------------------------------------- */
+
+
+.main-navigation {
+    margin-top: 50px;
+    margin-left:520px;
+}
+
+.menu-item a{
+    color: #f79824;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 19px;    
+}
+
+.menu-item-236 a{
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: -18px;
+    margin-top: -8px;    
+}
+
+.entry-title{
+    color:#003e1f;
+}
+.widget-title{
+    color: #f79824;
+}

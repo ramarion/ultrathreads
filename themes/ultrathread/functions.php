@@ -50,6 +50,7 @@ function ultrathread_setup() {
 	register_nav_menus(
 		array(
 			'menu-primary' => esc_html__( 'Primary', 'ultrathread' ),
+			'menu-secondary' => __('Secondary', 'ultrathread' )
 		)
 	);
 
@@ -120,9 +121,25 @@ function ultrathread_widgets_init() {
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>',
 		)
+		);
+			// Regsiter 4 footer widgets.
+	    register_sidebars(
+		4,
+		array(
+			/* translators: %d: Footer Widget count. */
+			'name'          => esc_html__( 'Footer Widget %d', 'ultrathread' ),
+			'id'            => 'footer-widget',
+			'description'   => esc_html__( 'Add widgets here.', 'ultrathread' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h6 class="widget-title">',
+			'after_title'   => '</h6>',
+		)
 	);
+	
 }
 add_action( 'widgets_init', 'ultrathread_widgets_init' );
+
 
 /**
  * Enqueue scripts and styles.
@@ -142,13 +159,13 @@ function ultrathread_scripts() {
 		'6.7.4'
 		);
 
-	//bootstrap css
-	wp_enqueue_style( 
-		'bootstrap-style', 
-		get_template_directory_uri() . '/assets/css/vendor/bootstrap.min.css', 
-		array(),
-		'5.1.3'
-		);	 
+		wp_enqueue_style( 
+			'app-style', 
+			get_template_directory_uri() . '/assets/css/app.css', 
+			array()
+			);	
+
+	
 
 	//what-input js
 	wp_enqueue_script( 
@@ -168,14 +185,7 @@ function ultrathread_scripts() {
 			true
 			);	 
 
-	//bootstrap js		
-	wp_enqueue_script( 
-			'bootstrap-script', 
-			get_template_directory_uri() . '/assets/js/vendor/bootstrap.min.js', 
-			array( 'jquery' ),
-			'5.1.3',
-			true
-			);	 
+ 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

@@ -24,7 +24,43 @@
                     "color": "#FFC125"	,
                     "name": "GoldenRod",
                     "slug": "goldenrod"
+                },
+                {
+                    "color": "#71C671"	,
+                    "name": "Chartreuse",
+                    "slug": "chartreuse"
+                },
+                {
+                    "color": "#FF4500"	,
+                    "name": "Orangered",
+                    "slug": "orangered"
+                },
+                {
+                    "color": "#228B22"	,
+                    "name": "Forrestgreen",
+                    "slug": "forrestgreen"
+                },
+                {
+                    "color": "#FF0000"	,
+                    "name": "Red",
+                    "slug": "red"
+                },
+                {
+                    "color": "#FF1493"	,
+                    "name": "Deeppink",
+                    "slug": "deeppink"
+                },
+                {
+                    "color": "#003e1f"	,
+                    "name": "Greenygreen",
+                    "slug": "greenygreen"
+                },
+                {
+                    "color": "#FFFF00"	,
+                    "name": "yellow",
+                    "slug": "yellow"
                 }
+
             ]
         },
         "layout": {
