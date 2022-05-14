@@ -145,6 +145,20 @@ h6.wp-block-heading {
         .wp-block-pullquote .wp-block-pullquote__citation {
             font-family: "Montserrat";
         }
+    
+    .wp-block-separator.is-style-default{
+        
+        border-top: 4px solid #003e1f;
+        max-width: 300px;
+    }    
+
+
+    .wp-block-separator.is-style-wide{
+        
+        border-bottom: 6px solid #003e1f;
+        
+    }    
+    
 /* WP BLOCK ENDS
 --------------------------------------------- */
 .entry-content > * {
