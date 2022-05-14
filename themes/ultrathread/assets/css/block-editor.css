@@ -109,6 +109,42 @@ h6.wp-block-heading {
 .wp-block-social-links:not(.is-style-logos-only) .wp-social-link{
     background-color: #000;
 }
+
+.wp-block-pullquote{
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    margin-bottom: 1.75em;
+    margin: 0 0 1em;
+    padding: 3em 0;
+    text-align: center;
+    color: var(--wp--preset--color--goldenrod) ;
+    background-color: #003e1f !important;
+    font-family: 'DM Serif Display', serif;
+}
+
+.wp-block-pullquote::before {
+    content: '"';
+    display: block;
+    font-size: 80px;
+    left: -200px;
+    top: -30px;
+    position: relative;
+    height: 0;
+    }
+
+    .wp-block-pullquote::after {
+        content: '"';
+        display: block;
+        font-size: 80px;
+        right: -320px;
+        bottom: 60px;
+        position: relative;
+        height: 0;
+        }
+
+        .wp-block-pullquote .wp-block-pullquote__citation {
+            font-family: "Montserrat";
+        }
 /* WP BLOCK ENDS
 --------------------------------------------- */
 .entry-content > * {
