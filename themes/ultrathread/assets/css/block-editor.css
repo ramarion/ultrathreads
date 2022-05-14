@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Allison&family=Bebas+Neue&family=DM+Serif+Display&family=Oswald&display=swap');
 
+
+/* WP Blocks
+--------------------------------------------- */
 /* WP BLOCK QUOTES */
 .wp-block-quote {
     color:green;
@@ -95,14 +98,19 @@ h6.wp-block-heading {
 
 .wp-block-image.is-style-default{
     width:1200px;
-    border-top-left-radius: 10px; 
-    border-bottom-right-radius: 10px; 
+    border-top-left-radius: 40px; 
+    border-bottom-right-radius: 40px; 
 }
 
 .wp-block-paragraph{
     font-family: Helvetica, sans-serif; 
 }
 
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link{
+    background-color: #000;
+}
+/* WP BLOCK ENDS
+--------------------------------------------- */
 .entry-content > * {
     max-width:1200px;
     margin-left:auto;
