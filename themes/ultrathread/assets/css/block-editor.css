@@ -1,6 +1,9 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Allison&family=Bebas+Neue&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Bebas+Neue&family=DM+Serif+Display&family=Oswald&display=swap');
 
+
+/* WP Blocks
+--------------------------------------------- */
 /* WP BLOCK QUOTES */
 .wp-block-quote {
     color:green;
@@ -11,6 +14,15 @@
     width:150px;
     display: flex;
     justify-content: center;
+    
+}
+
+/* WP BLOCK SITE LOGO */
+.wp-block-site-title a {
+    font-style:italic;
+    font-weight:800;
+    font-size:25px;
+    color:#f79824;
     
 }
 /* WP BLOCK BUTTONS */
@@ -85,24 +97,114 @@ h5.wp-block-heading {
 }
 /* WP BLOCK H6 */
 h6 {
-    font-family: 'Allison', cursive;
+    font-family: 'DM Serif Display', serif;
     color: #000;
 }
 h6.wp-block-heading {
-    font-family: 'Allison', cursive;
+    font-family: 'DM Serif Display', serif;
     color: #000;
 }
 
 .wp-block-image.is-style-default{
     width:1200px;
-    border-top-left-radius: 10px; 
-    border-bottom-right-radius: 10px; 
+    border-top-left-radius: 40px; 
+    border-bottom-right-radius: 40px; 
 }
 
 .wp-block-paragraph{
     font-family: Helvetica, sans-serif; 
 }
 
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link{
+    background-color: #000;
+}
+
+.wp-block-pullquote{
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    margin-bottom: 1.75em;
+    margin: 0 0 1em;
+    padding: 3em 0;
+    text-align: center;
+    color: var(--wp--preset--color--goldenrod) ;
+    background-color: #003e1f !important;
+    font-family: 'DM Serif Display', serif;
+}
+
+.wp-block-pullquote::before {
+    content: '"';
+    display: block;
+    font-size: 80px;
+    left: -200px;
+    top: -30px;
+    position: relative;
+    height: 0;
+    }
+
+    .wp-block-pullquote::after {
+        content: '"';
+        display: block;
+        font-size: 80px;
+        right: -320px;
+        bottom: 60px;
+        position: relative;
+        height: 0;
+        }
+
+        .wp-block-pullquote .wp-block-pullquote__citation {
+            font-family: "Montserrat";
+        }
+    
+    .wp-block-separator.is-style-default{
+        
+        border-top: 4px solid #003e1f;
+        max-width: 300px;
+    }    
+
+
+    .wp-block-separator.is-style-wide{
+        
+        border-bottom: 6px solid #003e1f;
+        
+    } 
+    
+    .wp-block-media-text {
+        grid-template-columns: 1fr 50%;
+        border-radius: 30px;
+    }
+    
+    .wp-block-media-text__media img{
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .wp-block-loginout a{
+        text-decoration: none;
+        font-family: 'DM Serif Display', serif;
+        font-size:1.2rem;
+    }
+
+    .wp-block-search__input{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        font-family: 'DM Serif Display', serif;
+    }
+    .wp-block-search__button {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        font-family: 'DM Serif Display', serif;
+        background-color: #ffc125;
+        border: 1px solid #ccc;
+        padding: 0.375em 0.625em;
+        line-height: inherit;
+        height:40px;
+    }
+
+    .wp-block-search__label {
+        display: none;
+    }
+/* WP BLOCK ENDS
+--------------------------------------------- */
 .entry-content > * {
     max-width:1200px;
     margin-left:auto;
