@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Allison&family=Bebas+Neue&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Bebas+Neue&family=DM+Serif+Display&family=Oswald&display=swap');
 
 /* WP BLOCK QUOTES */
 .wp-block-quote {
@@ -85,11 +85,11 @@ h5.wp-block-heading {
 }
 /* WP BLOCK H6 */
 h6 {
-    font-family: 'Allison', cursive;
+    font-family: 'DM Serif Display', serif;
     color: #000;
 }
 h6.wp-block-heading {
-    font-family: 'Allison', cursive;
+    font-family: 'DM Serif Display', serif;
     color: #000;
 }
 
