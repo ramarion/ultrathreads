@@ -17,15 +17,39 @@ body{
     padding-top: 10px;
 }
 
-.site-footer{
+/* footer CSS start
+--------------------------------------------- */
+.site-footer-bottom{
     background-color:#003e1f;
     color: #f79824;
     text-align:center;
-    height:200px;
-    
+    padding: 15px 0;
+}
+
+.site-footer-top{
+    background-color:#71C671;
+    color: #f79824;
+    padding: 6.25rem 0 2.5rem;
+}
+
+.site-footer-bottom-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	
 }
 
 .site-info a{text-decoration: none; color: #fff;}
+
+.footer-widgets-wrapper {
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+/* footer CSS end
+--------------------------------------------- */
+
 
 .main-navigation {
     margin-top: 50px;
