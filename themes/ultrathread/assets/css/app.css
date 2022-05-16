@@ -106,3 +106,22 @@ body{
 }
 
 .form-submit{display:flex;justify-content:center;border-radius: 10px;}
+
+
+/*---- woocommercer css -----*/
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+    background-color: #003e1f;
+    font-family: 'DM Serif Display', serif;
+    color: #f79824;
+    -webkit-font-smoothing: antialiased;
+}
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+    background-color: #003e1f;
+    color: #fbfbfb;
+    
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+    font-family: 'DM Serif Display', serif;
+}
+
