@@ -214,4 +214,9 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/block-editor.php';
 
+/**
+ * Woo Commerce additions.
+ */
+require get_template_directory() . '/inc/woocommerce.php';
+
 
