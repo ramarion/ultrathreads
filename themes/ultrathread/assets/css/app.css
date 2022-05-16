@@ -81,14 +81,26 @@ body{
     color: #f79824;
 }
 
-.comment-form-comment {
-    max-width: 1300px;
+.comment-form-comment textarea{
+    max-width: 1078px;
     display:flex;
     justify-content: center;
+    box-sizing: border-box;
+  border: 6px solid #003e1f;
+  border-radius: 10px;
+  background-color: #d17f1b;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size:20px;
+  resize: none;
 }
 .comment-form-comment label {
    font-weight: 800;
    font-size:1.5rem;
    font-family: "Montserrat";
    color:#023a1e;
+}
+.comment-form-comment {
+   display:flex;
+   justify-content: center;
 }
