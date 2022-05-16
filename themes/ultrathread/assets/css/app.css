@@ -80,3 +80,15 @@ body{
 .widget-title{
     color: #f79824;
 }
+
+.comment-form-comment {
+    max-width: 1300px;
+    display:flex;
+    justify-content: center;
+}
+.comment-form-comment label {
+   font-weight: 800;
+   font-size:1.5rem;
+   font-family: "Montserrat";
+   color:#023a1e;
+}
