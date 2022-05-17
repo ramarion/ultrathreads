@@ -1,0 +1,34 @@
+/*---- woocommercer css -----*/
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+    background-color: #003e1f;
+    font-family: 'DM Serif Display', serif;
+    color: #f79824;
+    -webkit-font-smoothing: antialiased;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+}
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+    background-color: #003e1f;
+    color: #fbfbfb;
+    
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+    font-family: 'DM Serif Display', serif;
+}
+
+.woocommerce #content div.product .summary .cart .quantity .qty, .woocommerce div.product .summary .cart .quantity .qty, .woocommerce-page #content div.product .summary .cart .quantity .qty, .woocommerce-page div.product .summary .cart .quantity .qty {
+    padding: 0.6em;
+    background-color: #f2f2f2;
+    color: #43454b;
+    border: 0;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    font-weight: 400;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin: 0 -8px 0 8px;
+    height: 36px;
+}
