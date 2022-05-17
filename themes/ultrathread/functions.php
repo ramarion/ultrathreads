@@ -158,13 +158,17 @@ function ultrathread_scripts() {
 		array(),
 		'6.7.4'
 		);
-
+	//App CSS	
 		wp_enqueue_style( 
 			'app-style', 
 			get_template_directory_uri() . '/assets/css/app.css', 
 			array()
 			);	
-
+	//WooCommerce CSS
+	wp_enqueue_style( 
+		'woocommerce-style', 
+		get_template_directory_uri() . '/assets/css/woocommerce.css'
+	);	
 	
 
 	//what-input js
