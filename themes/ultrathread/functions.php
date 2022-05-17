@@ -47,11 +47,13 @@ function ultrathread_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
+	// Conditional function added to menu
 	if ( has_nav_menu( 'menu-primary' ) ){
 			register_nav_menus(
 		array(
 			'menu-primary' => esc_html__( 'Primary', 'ultrathread' ),
-			'menu-secondary' => __('Secondary', 'ultrathread' )
+			'menu-secondary' => __('Secondary', 'ultrathread' ),
+			'menu-social' => __('Social', 'ultrathread' )
 		)
 	);
     }
