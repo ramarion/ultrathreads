@@ -45,8 +45,8 @@
 .woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
     padding: 0.5em 0;
     margin: 0;
-    font-size: 0.85em;
-    color: white;
+    font-size: 0.95em;
+    color: #f79824;
     margin-top: -15px;
 }
 /* product title in shop archive */
@@ -113,19 +113,19 @@
 }
 /* product meta */
 .product_meta{
-    width:286px;
+    display:grid;
     font-size:16px;
 }
 .sku_wrapper{
     font-size: large;
     font-family: 'Roboto';
 }
-.posted_in{
+.posted_in,.tagged_as{
     color:#000000;
     font-size: large;
     font-family: 'Roboto';
 }
-.posted_in a{
+.posted_in a, .tagged_as a{
     color:#e34806;
     font-size: large;
     font-family: 'Roboto';
@@ -162,3 +162,23 @@
     background-color: white;
 }
 
+.woocommerce-product-details__short-description {
+    font-family: 'Roboto';
+    font-size: large;
+    font-weight: 700;
+}
+
+
+/*font-family: Gillsans, sans-serif; */
+/*Single Product Price */
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+    color: #77a464;
+    font-size: 2.25em;
+    font-weight: 600;
+    font-family: 'Oswald';
+}
+
+.woocommerce #content div.product .summary .cart .quantity .qty, .woocommerce div.product .summary .cart .quantity .qty, .woocommerce-page #content div.product .summary .cart .quantity .qty, .woocommerce-page div.product .summary .cart .quantity .qty {
+    font-family: 'Oswald';
+    font-weight: 700;
+}
