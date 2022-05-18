@@ -126,7 +126,7 @@ function ultrathread_widgets_init() {
 		);
 			// Regsiter 4 footer widgets.
 	    register_sidebars(
-		4,
+		6,
 		array(
 			/* translators: %d: Footer Widget count. */
 			'name'          => esc_html__( 'Footer Widget %d', 'ultrathread' ),
