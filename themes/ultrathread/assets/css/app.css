@@ -64,14 +64,15 @@ body{
     font-size: 19px;    
 }
 
-.menu-item-236 a{
+.menu-footer-container a{
     color: #fff;
     font-family: "Montserrat";
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 10px;
     margin-left: -18px;
-    margin-top: -8px;    
+    margin-top: -15px;  
+    width:200px;  
 }
 
 .entry-title{
@@ -112,3 +113,4 @@ body{
 .single-product{
     margin-top:30px;
 }
+
