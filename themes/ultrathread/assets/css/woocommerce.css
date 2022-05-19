@@ -267,3 +267,47 @@ td.actions .input-text, .woocommerce table.cart td.actions .input-text, .woocomm
     width: 112px;
     border-radius: 9px;
 }
+
+div.wpforms-container-full .wpforms-form .wpforms-field-label-inline {
+    cursor: pointer;
+    color: #e34806;
+    font-family: GillSans;
+    font-weight: 700;
+}
+
+div.wpforms-container-full .wpforms-form ul li {
+    display: flex;
+}
+
+div.wpforms-container-full .wpforms-form input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+}
+div.wpforms-container-full .wpforms-form button[type=submit]{
+    border-radius: 20px;
+    background-color:#003e1f;
+    color: #fea437;
+    font-family: 'DM Serif Display';
+}
+div.wpforms-container-full:hover .wpforms-form button[type=submit]:hover{
+    border-radius: 20px;
+    background-color:#003e1f;
+    color: #fff;
+    font-family: 'DM Serif Display';
+}
+/* button removal */
+.woocommerce a.remove {
+    display: block;
+    font-size: 1.5em;
+    height: 1em;
+    width: 1em;
+    text-align: center;
+    line-height: 1;
+    border-radius: 100%;
+    color: #fff!important;
+    text-decoration: none;
+    font-weight: 700;
+    border: 0;
+    background-color: #e34806;
+    line-height: 18px;
+}
