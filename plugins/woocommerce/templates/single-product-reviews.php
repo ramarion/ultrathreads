@@ -74,7 +74,7 @@ if ( ! comments_open() ) {
 					/* translators: %s is product title */
 					'title_reply'         => have_comments() ? esc_html__( 'Add a review', 'woocommerce' ) : sprintf( esc_html__( 'Be the first to review &ldquo;%s&rdquo;', 'woocommerce' ), get_the_title() ),
 					/* translators: %s is product title */
-					'title_reply_to'      => esc_html__( 'Leave a Reply to %s', 'woocommerce' ),
+					'title_reply_to'      => esc_html__( 'Add A Review to %s', 'woocommerce' ),
 					'title_reply_before'  => '<span id="reply-title" class="comment-reply-title">',
 					'title_reply_after'   => '</span>',
 					'comment_notes_after' => '',
