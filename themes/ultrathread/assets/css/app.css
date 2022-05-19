@@ -47,6 +47,10 @@ body{
 	grid-gap: 30px;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+.footer-widget-single{
+    display: grid;
+}
 /* footer CSS end
 --------------------------------------------- */
 
@@ -64,7 +68,7 @@ body{
     font-size: 19px;    
 }
 
-.menu-footer-container a{
+.widget_nav_menu a{
     color: #fff;
     font-family: "Montserrat";
     font-weight: 700;
