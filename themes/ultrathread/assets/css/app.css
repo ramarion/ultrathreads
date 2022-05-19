@@ -7,6 +7,8 @@ body{
     color: #f79824;
     display:flex;
     padding: 10px;
+    margin-bottom: 25px;
+
 }
 .site-description{
     font-family: 'Bebas Neue', cursive;
@@ -29,7 +31,7 @@ body{
 .site-footer-top{
     background-color:#2a752a;
     color: #f79824;
-    padding: 1.25rem 30px 1.5rem;
+    padding: 1.25rem 30px 1.5rem 60px;
 }
 
 .site-footer-bottom-wrapper {
@@ -45,11 +47,11 @@ body{
 .footer-widgets-wrapper {
 	display: grid;
 	grid-gap: 30px;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
 }
 
 .footer-widget-single{
-    display: grid;
+    padding-left: 50px;
 }
 /* footer CSS end
 --------------------------------------------- */
@@ -93,9 +95,8 @@ body{
     box-sizing: border-box;
   border: 6px solid #003e1f;
   border-radius: 10px;
-  background-color: #d17f1b;
   font-family: 'Oswald', sans-serif;
-  color: white;
+  color: #003e1f;
   font-size:20px;
   resize: none;
 }
@@ -112,9 +113,31 @@ body{
 
 .form-submit{display:flex;justify-content:center;border-radius: 10px;}
 
-
-
-.single-product{
-    margin-top:30px;
+div.wpforms-container-full .wpforms-form input[type=text], div.wpforms-container-full .wpforms-form input[type=email]{
+    border-radius: 10px;
 }
 
+.navigation {
+    display:none;
+}
+
+.comment-reply-title{
+    text-align: center;
+    font-size:xx-large;
+}
+
+div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+    border-radius: 10px;
+    width: 720px;
+    height: 250px;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field-sublabel {
+    display: block;
+    font-size: 13px;
+    float: none;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 4px 0 0 14px;
+    padding: 0;
+}
