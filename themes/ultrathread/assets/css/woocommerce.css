@@ -394,3 +394,29 @@ legend{
     font-size: medium;
     font-weight: 600;
 }
+
+.fa-sign-out::before {
+    content: "\f08b"; }
+
+.woocommerce form.login {
+        border: 3px solid green;
+        background-color: white;
+        padding: 20px;
+        margin: 2em 0;
+        text-align: left;
+        border-radius: 5px;
+        width:50%
+    }    
+
+.woocommerce-LostPassword a{
+    color:#e34806;
+    font-weight: 600;
+    font-family: Gillsans,sans-serif;
+}    
+.woocommerce-MyAccount-content a{
+    color:#e34806;
+    
+}    
+.woocommerce-orders-table__cell{
+    font-weight: bold;
+}
