@@ -153,6 +153,14 @@ function ultrathread_scripts() {
 	array(),
 	 ULTRATHREAD_VERSION
 	 );
+
+	 //fontawesome css		
+	wp_enqueue_style( 
+		'fontawesome-style', 
+		get_template_directory_uri() . '/assets/css/vendor/fontawesome' . $min . '.css', 
+		array(),
+		'6.1.1'
+		);	
 	//foundations css
 	wp_enqueue_style( 
 		'foundation-style', 
@@ -190,6 +198,7 @@ function ultrathread_scripts() {
 			'6.7.4',
 			true
 			);	 
+	 
 
  
 
