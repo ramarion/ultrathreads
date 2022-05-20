@@ -240,6 +240,8 @@
 }
 .woocommerce-privacy-policy-text a{
     color:#e34806;
+    text-decoration: underline;
+    font-weight: 600;
 }
 .woocommerce a.button.alt{
     border-radius: 20px !important;
@@ -358,6 +360,7 @@ div.wpforms-container-full:hover .wpforms-form button[type=submit]:hover{
 }
 
 .woocommerce .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--customer-logout a::before {
+    font-family: FontAwesome;
     content: "\f007";
 }
 .woocommerce .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--downloads a::before {
@@ -405,13 +408,26 @@ legend{
         margin: 2em 0;
         text-align: left;
         border-radius: 5px;
-        width:50%
+        
+    }    
+.woocommerce form.register {
+        border: 3px solid green;
+        background-color: white;
+        padding: 20px;
+        margin: 2em 0;
+        text-align: left;
+        border-radius: 5px;
+        
+    }    
+.woocommerce form.register p{
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }    
 
 .woocommerce-LostPassword a{
     color:#e34806;
     font-weight: 600;
     font-family: Gillsans,sans-serif;
+    text-decoration: underline;
 }    
 .woocommerce-MyAccount-content a{
     color:#e34806;
@@ -420,3 +436,46 @@ legend{
 .woocommerce-orders-table__cell{
     font-weight: bold;
 }
+/* ORDER DETAILS */
+.woocommerce ul.order_details {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+.woocommerce-notice p {
+   font-weight:600;
+   color:#e34806;
+}
+.woocommerce-privacy-policy-text p{
+    font-weight:600;
+}
+
+.woocommerce .woocommerce-customer-details{
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.woocommerce-thankyou-order-received{
+    color: #e34806;
+    font-weight:600;
+}
+
+p{font-weight:700;}
+
+.woocommerce-terms-and-conditions-link{color: #e34806;}
+
+.woocommerce-page div.product div.summary {
+    float: right;
+    width: 48%;
+    clear: none;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.comments-area{display: flex;
+    flex-direction: column;
+    align-items: center;}
