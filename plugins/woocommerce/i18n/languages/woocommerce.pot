@@ -36742,7 +36742,7 @@ msgstr ""
 
 #. translators: %s is product title
 #: templates/single-product-reviews.php:77
-msgid "Add a review to %s"
+msgid "Leave a Reply to %s"
 msgstr ""
 
 #: templates/single-product-reviews.php:81
