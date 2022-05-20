@@ -18,7 +18,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="themes/ultrathread/assets/css/vendor/fontawesome.min.css">
+	<link rel="stylesheet" href="/assets/css/vendor/fontawesome.min.css">
 </head>
 
 <body <?php body_class(); ?>>
