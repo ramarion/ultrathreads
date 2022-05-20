@@ -157,7 +157,7 @@ function ultrathread_scripts() {
 	 //fontawesome css		
 	wp_enqueue_style( 
 		'fontawesome-style', 
-		get_template_directory_uri() . '/assets/css/vendor/fontawesome' . $min . '.css', 
+		get_template_directory_uri() . '/assets/css/vendor/fontawesome.min.css', 
 		array(),
 		'6.1.1'
 		);	
@@ -196,6 +196,14 @@ function ultrathread_scripts() {
 			get_template_directory_uri() . '/assets/js/vendor/foundation.min.js', 
 			array( 'jquery', 'what-input-script' ),
 			'6.7.4',
+			true
+			);	 
+	//foundations js		
+	wp_enqueue_script( 
+			'font-awesome-script', 
+			get_template_directory_uri() . '/assets/js/vendor/fontawesome.min.js', 
+			array( 'jquery' ),
+			'6.1.1',
 			true
 			);	 
 	 
