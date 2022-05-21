@@ -232,3 +232,8 @@ h6.wp-block-heading {
     display:none;
 }
 
+.wp-block-image figcaption {
+   font-family: "Helvetica Neue";
+   font-weight: 300;
+    font-style: italic;
+}
