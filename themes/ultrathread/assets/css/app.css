@@ -103,12 +103,8 @@ body{
 .comment-form-comment label {
    font-weight: 800;
    font-size:1.5rem;
-   font-family: "Montserrat";
+   font-family: Gillsans,sans-serif;
    color:#023a1e;
-}
-.comment-form-comment {
-   display:flex;
-   justify-content: center;
 }
 
 .form-submit{display:flex;justify-content:center;border-radius: 10px;}
@@ -142,3 +138,77 @@ div.wpforms-container-full .wpforms-form .wpforms-field-sublabel {
     padding: 0;
 }
 
+.wc-block-grid__product{
+    background-color: #003e1f;
+    padding:15px;
+    border-radius: 10px;
+}
+/* review area */
+.avatar{
+    border-radius:50%;
+}
+.comment-body{
+background: #f2f2f2;
+    color: #293038;
+    margin: 0 auto;
+    padding: 5%;
+    border-radius: 5px;
+    border: 1px solid #003e1f;
+    margin-bottom: 1.2em;
+    width: 350px;
+    height:auto;
+    margin-bottom: 10px;
+}
+
+.comment-metadata a{
+    font-size: 10px;
+    color: #e34806;
+}
+
+.fn a{
+    font-family: "DM Display";
+    text-transform: uppercase;
+    font-size: medium;
+    color:#003e1f;
+}
+
+.reply a  {
+    float: right;
+    font-family: Gillsans,sans-serif;
+    color: #fff;
+    font-weight: 600;
+    background-color: #e34806;
+    padding: 5px;
+    border-radius: 18px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.says{
+    font-weight: 500;
+}
+
+.required{
+    color: red;
+}
+
+.logged-in-as a{color:#e34806;}
+
+.comment-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.woocommerce form.checkout_coupon {
+    background-color:white;
+}
+
+.woocommerce-checkout #payment div.payment_box p:last-child {
+    color:#e34806;
+}
