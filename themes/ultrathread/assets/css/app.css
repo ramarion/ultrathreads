@@ -59,7 +59,7 @@ body{
 
 .main-navigation {
     margin-top: 50px;
-    margin-left:520px;
+    margin-left:20px;
 }
 
 .menu-item a{
@@ -68,6 +68,10 @@ body{
     font-weight: 700;
     text-transform: uppercase;
     font-size: 19px;    
+}
+
+.menu-item a:hover{
+    color: #fff; 
 }
 
 .widget_nav_menu a{
@@ -84,6 +88,13 @@ body{
 .entry-title{
     color:#003e1f;
 }
+.entry-title a{
+    color:#003e1f;
+}
+.entry-title a:hover{
+    color: #f79824;
+}
+
 .widget-title{
     color: #f79824;
 }
@@ -212,3 +223,37 @@ background: #f2f2f2;
 .woocommerce-checkout #payment div.payment_box p:last-child {
     color:#e34806;
 }
+/* entry meta */
+.wp-block-column{
+    border-radius: 5px;
+    padding: 15px;
+}
+/* entry category links */
+.cat-links{
+    display: none;
+}
+/* entry meta */
+.entry-meta{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:600;
+
+}
+
+/* entry pots */
+.posted-on a{color:#e34806; font-weight: 700;}
+/* entry byline */
+.byline{
+    display: none;
+}
+
+.updated::before{
+    content: " / Updated On:";
+    color:black;
+    font-weight:600;
+}
+
+.updated::after{
+    color:#e34806;
+}
+
+.comments-link{display:none;}
