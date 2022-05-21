@@ -124,7 +124,7 @@ function ultrathread_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 		);
-			// Regsiter 4 footer widgets.
+			// Regsiter 6 footer widgets.
 	    register_sidebars(
 		6,
 		array(
@@ -154,13 +154,14 @@ function ultrathread_scripts() {
 	 ULTRATHREAD_VERSION
 	 );
 
-	 //fontawesome css		
-	wp_enqueue_style( 
-		'fontawesome-style', 
-		get_template_directory_uri() . '/assets/css/vendor/fontawesome.min.css', 
-		array(),
-		'6.1.1'
-		);	
+	
+	// Fontawesome style.
+	wp_enqueue_style( 'shopup-fontawesome-style', 
+	get_template_directory_uri() . '/assets/css/vendor/fontawesome' . $min . '.css',
+	array(),
+	'5.15.4'
+    );	
+
 	//foundations css
 	wp_enqueue_style( 
 		'foundation-style', 
