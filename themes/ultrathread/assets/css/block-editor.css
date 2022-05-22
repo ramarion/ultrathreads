@@ -50,31 +50,31 @@
 
 /* WP BLOCK HEADING */
 h1.wp-block-heading{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'DM Serif Display', serif;
     color: #0693e3;
 }
 h1{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'DM Serif Display', serif;
     color: #0693e3;
 }
 
 /* WP BLOCK H2 */
 h2 {
-    font-family: Gillsans, sans-serif;
+    font-family: 'DM Serif Display', serif;
     color: #e34806;
 }
 h2.wp-block-heading {
-    font-family: Gillsans, sans-serif;
+    font-family: 'DM Serif Display', serif;
     color: #e34806;
 }
 
 /* WP BLOCK H3 */
 h3 {
-    font-family: Verdana, sans-serif;
+    font-family: Gillsans,sans-serif;
     color: #023a1e;
 }
 h3.wp-block-heading {
-    font-family: Verdana, sans-serif;
+    font-family: Gillsans,sans-serif;
     color: #023a1e;
 }
 /* WP BLOCK H4 */
@@ -225,9 +225,6 @@ h6.wp-block-heading {
     width:100%;
 }
 
-.home{
-    padding:20px;
-}
 
 .custom-logo{width:100px;}
 
@@ -235,3 +232,8 @@ h6.wp-block-heading {
     display:none;
 }
 
+.wp-block-image figcaption {
+   font-family: "Helvetica Neue";
+   font-weight: 300;
+    font-style: italic;
+}
