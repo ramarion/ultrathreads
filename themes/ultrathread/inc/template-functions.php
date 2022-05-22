@@ -42,6 +42,7 @@ function ultrathread_generate_theme_option_css(){
     $themeColor = get_theme_mod('ultrathread_theme_bgcolor');
     $header_bgcolor = get_theme_mod('ultrathread_header_bgcolor');
     $footer_bgcolor = get_theme_mod('ultrathread_footer_bgcolor');
+    $footer_widget_bgcolor = get_theme_mod('ultrathread_footer_widget_bgcolor');
  
     if(!empty($themeColor)):
      
@@ -58,6 +59,9 @@ function ultrathread_generate_theme_option_css(){
 
         .site-footer-bottom {
             background-color: <?php echo $footer_bgcolor; ?>;
+        }
+        .site-footer-top {
+            background-color: <?php echo $footer_widget_bgcolor; ?>;
         }
      
     </style>    
