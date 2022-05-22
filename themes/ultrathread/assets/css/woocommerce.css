@@ -489,3 +489,31 @@ p{font-weight:700;}
 .comments-area{display: flex;
     flex-direction: column;
     align-items: center;}
+
+    .woocommerce a.added_to_cart {
+        padding-top: 0; 
+        display: flex;
+        color: white;
+        justify-content: center;
+        line-height: 5;
+        z-index: 1;
+        font-weight: 600;
+    }    
+    .woocommerce a.added_to_cart:hover {
+        color: #fea437;
+    }    
+
+    .woocommerce-message,.product-intro__description-table-item {
+        font-weight: 600;
+    }
+/* sort */
+.woocommerce .woocommerce-ordering select {
+    vertical-align: top;
+    color: green;
+    border-radius: 20px;
+    border: 5px solid;
+    padding-left: 18px;
+    font-size: large;
+    font-weight: 550;
+    font-family: 'Bebas Neue';
+}
