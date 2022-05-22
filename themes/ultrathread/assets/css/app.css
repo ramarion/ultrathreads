@@ -279,3 +279,83 @@ font-size: 100%;
 
 .submit:hover{color:#fff}
 
+.wc-block-grid__product-title {
+    font-family: 'DM Serif Display', serif;
+    color: #f79824;
+    font-weight: 700;
+    font-size: xx-large;
+}
+.wc-block-grid__product-title:hover {
+    color:white;
+}
+
+.wc-block-grid__product-price {
+font-family: 'Oswald';
+color:white;
+}
+
+.wc-block-grid__product-onsale { 
+    color: #fff;
+    background: #e34806;
+    position: absolute;
+    border-radius: 20px;
+    font-family: 'Oswald';
+}
+
+.wc-block-featured-product{
+    border-radius: 20px;
+    border: 5px solid #e34806;
+}
+
+.wc-block-featured-product__price{
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-size:large;
+    font-weight:bold;
+}
+
+.wc-block-featured-product__description{
+    font-style: italic;
+}
+.wc-block-featured-product .wc-block-featured-product__title{
+    color: #f79824;
+}
+
+.added_to_cart.wc-forward{
+    color: #fff;
+    display:flex;
+    position: absolute;
+    left:120px;
+}
+.widget_nav_menu a:hover {
+color:#f79824;
+}
+
+.wpforms-confirmation-container-full, div[submit-success]>.wpforms-confirmation-container-full:not(.wpforms-redirection-message) {
+    background: #fefefe;
+    border: 5px solid #b4d39b;
+    border-radius: 10px;
+    color: black;
+}
+
+.header-search{
+    margin-left: 33px;
+    margin-right: 61px;
+    margin-top: 54px;
+}
+
+.search-field{
+    border-radius:20px;
+    padding-left: 15px;
+}
+
+.search-submit{
+    background: #003e1f;
+    color: #f79824;
+    font-family: 'DM Serif Display', serif;
+    border-radius: 27px;
+    border: 5px solid white;
+    padding: 5px;
+    width: 194px;
+    font-size: 20px;
+}

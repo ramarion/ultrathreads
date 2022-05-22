@@ -13,7 +13,7 @@
 function ultrathread_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+	
 
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
@@ -32,6 +32,46 @@ function ultrathread_customize_register( $wp_customize ) {
 			)
 		);
 	}
+
+	// Remove title
+	$wp_customize->add_setting(
+		'ultrathread_settings[hide_title]',
+		array(
+			'default' => $defaults['hide_title'],
+			'type' => 'option',
+			'sanitize_callback' => 'ultrathread_sanitize_checkbox'
+		)
+	);
+
+	$wp_customize->add_control(
+		'ultrathread_settings[hide_title]',
+		array(
+			'type' => 'checkbox',
+			'label' => __( 'Hide site title', 'ultrathread' ),
+			'section' => 'title_tagline',
+			'priority' => 9
+		)
+	);
+
+	// Remove tagline
+	$wp_customize->add_setting(
+		'ultrathread_settings[hide_tagline]',
+		array(
+			'default' => $defaults['hide_tagline'],
+			'type' => 'option',
+			'sanitize_callback' => 'ultrathread_sanitize_checkbox'
+		)
+	);
+
+	$wp_customize->add_control(
+		'ultrathread_settings[hide_tagline]',
+		array(
+			'type' => 'checkbox',
+			'label' => __( 'Hide site tagline', 'matangi' ),
+			'section' => 'title_tagline',
+			'priority' => 12
+		)
+	);
 	// Add New Section: Colors
     $wp_customize->add_section( 'ultrathread_color_section', array(
 		'title' => 'Colors',
@@ -50,6 +90,18 @@ $wp_customize->add_setting( 'ultrathread_header_bgcolor', array(
 
 $wp_customize->add_setting( 'ultrathread_footer_bgcolor', array(
 'default' => '#003e1f',                        
+));
+
+$wp_customize->add_setting( 'ultrathread_footer_widget_bgcolor', array(
+'default' => '#2a752a',                        
+));
+
+$wp_customize->add_setting( 'ultrathread_site_description_color', array(
+'default' => '#f79824',                        
+));
+
+$wp_customize->add_setting( 'ultrathread_header_menu_color', array(
+'default' => '#f79824',                        
 ));
 
 
@@ -73,6 +125,24 @@ $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'ultr
 'section' => 'ultrathread_color_section',
 'settings' => 'ultrathread_footer_bgcolor'
 )));
+
+$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'ultrathread_footer_widget_bgcolor', array(
+'label' => 'Footer Widget Background',
+'section' => 'ultrathread_color_section',
+'settings' => 'ultrathread_footer_widget_bgcolor'
+)));
+
+$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'ultrathread_site_description_color', array(
+'label' => 'Site Description Color',
+'section' => 'ultrathread_color_section',
+'settings' => 'ultrathread_site_description_color'
+)));
+
+$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'ultrathread_header_menu_color', array(
+'label' => 'Header Menu Color',
+'section' => 'ultrathread_color_section',
+'settings' => 'ultrathread_header_menu_color'
+)));
 // close controls
 
 // THEME OPTIONS PANEL
@@ -80,98 +150,64 @@ $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'ultr
 $wp_customize->add_panel(
 	'ultrathread_theme_options',
 	array(
-		'title'    => esc_html__( 'Theme Options', 'ultrathread' ),
+		'title'    => esc_html__( 'Post Options', 'ultrathread' ),
 		'priority' => 130,
 	)
 );
 $wp_customize->add_section(
-	'ultrathread_typography',
+	'ultrathread_posts_styles',
 	array(
 		'panel' => 'ultrathread_theme_options',
-		'title' => esc_html__( 'Typography', 'ultrathread' ),
-		'description' => 'Changes to the fonts can be made here.',
+		'title' => esc_html__( 'Post Styles', 'ultrathread' ),
+		'description' => 'Add images to posts here.',
 	)
 );
 
 // Typography - Site Title Font.
 $wp_customize->add_setting(
-	'ultrathread_site_title_font',
+	'ultrathread_post_font_color',
 	array(
-		'default'           => 'DM Serif Display',
-		'sanitize_callback' => 'ultrathread_sanitize_google_fonts',
+		'default'           => '#003e1f',
 	)
 );
 
-$wp_customize->add_control(
-	'ultrathread_site_title_font',
+$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize,
+	'ultrathread_post_font_color',
 	array(
-		'label'    => esc_html__( 'Site Title Font Family', 'ultrathread' ),
-		'section'  => 'ultrathread_typography',
-		'settings' => 'ultrathread_site_title_font',
-		'type'     => 'select',
-		'choices'  => array('DM Serif Display', 'Gillsans,sans-serif','Montserrat','Bebas Neue','Oswald'),
-	)
-);
+		'label' => 'Post Title Color',
+'section' => 'ultrathread_posts_styles',
+'settings' => 'ultrathread_post_font_color'
+	)));
 
-// Typography - Site Description Font.
+// Typography - Site Title Font.
 $wp_customize->add_setting(
-	'ultrathread_site_description_font',
+	'ultrathread_post_bg_color',
 	array(
-		'default'           => 'Bebas Neue',
-		'sanitize_callback' => 'ultrathread_sanitize_google_fonts',
+		'default'           => '#fff',
 	)
 );
 
-$wp_customize->add_control(
-	'ultrathread_site_description_font',
+$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize,
+	'ultrathread_post_bg_color',
 	array(
-		'label'    => esc_html__( 'Site Description Font Family', 'ultrathread' ),
-		'section'  => 'ultrathread_typography',
-		'settings' => 'ultrathread_site_description_font',
-		'type'     => 'select',
-		'choices'  => array('DM Serif Display', 'Gillsans,sans-serif','Montserrat','Bebas Neue','Oswald'),
-	)
-);
+		'label' => 'Post Background Color',
+'section' => 'ultrathread_posts_styles',
+'settings' => 'ultrathread_post_bg_color'
+	)));
 
-// Typography - Header Font.
+// Typography - Site Title Font.
 $wp_customize->add_setting(
-	'ultrathread_header_font',
-	array(
-		'default'           => 'DM Serif Display',
-		'sanitize_callback' => 'ultrathread_sanitize_google_fonts',
-	)
-);
+	'ultrathread_post_media' );
 
-$wp_customize->add_control(
-	'ultrathread_header_font',
+$wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'ultrathread_post_media',
 	array(
-		'label'    => esc_html__( 'Header Font Family', 'ultrathread' ),
-		'section'  => 'ultrathread_typography',
-		'settings' => 'ultrathread_header_font',
-		'type'     => 'select',
-		'choices'  => array('DM Serif Display', 'Gillsans,sans-serif','Montserrat','Bebas Neue','Oswald'),
-	)
-);
+	'label' => 'Media',
+'section' => 'ultrathread_posts_styles',
 
-// Typography - Body Font.
-$wp_customize->add_setting(
-	'ultrathread_body_font',
-	array(
-		'default'           => 'Montserrat',
-		'sanitize_callback' => 'ultrathread_sanitize_google_fonts',
-	)
-);
+	)));
 
-$wp_customize->add_control(
-	'ultrathread_body_font',
-	array(
-		'label'    => esc_html__( 'Body Font Family', 'ultrathread' ),
-		'section'  => 'ultrathread_typography',
-		'settings' => 'ultrathread_body_font',
-		'type'     => 'select',
-		'choices'  => array('DM Serif Display', 'Gillsans,sans-serif','Montserrat','Bebas Neue','Oswald'),
-	)
-);
+
+
 
 
 }

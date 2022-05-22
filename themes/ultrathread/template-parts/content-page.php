@@ -26,6 +26,10 @@
 				'after'  => '</div>',
 			)
 		);
+
+		<div class="wp-block-column">
+		<img src="<?php echo get_theme_mod('ultrathread_post_media'); ?>">
+	</div>
 		?>
 	</div><!-- .entry-content -->
 
