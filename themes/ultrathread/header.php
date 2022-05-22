@@ -18,6 +18,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -39,12 +40,15 @@
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ultrathread' ); ?></button>
 			<?php
+			// Conditional function added to menu
+		    if ( has_nav_menu( 'menu-primary' ) ){
 			wp_nav_menu(
 				array(
 					'theme_location' => 'menu-primary',
 					'menu_id'        => 'primary-menu',
 				)
 			);
+		}
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

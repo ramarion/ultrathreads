@@ -35,3 +35,36 @@ function ultrathread_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'ultrathread_pingback_header' );
+
+//lets the color changes show in the theme from customizer
+function ultrathread_generate_theme_option_css(){
+ 
+    $themeColor = get_theme_mod('ultrathread_theme_bgcolor');
+    $header_bgcolor = get_theme_mod('ultrathread_header_bgcolor');
+    $footer_bgcolor = get_theme_mod('ultrathread_footer_bgcolor');
+ 
+    if(!empty($themeColor)):
+     
+    ?>
+    <style type="text/css" id="ultrathread-theme-option-css">
+         
+        .site-header{
+            background:<?php echo $header_bgcolor; ?>;
+        } 
+        
+		body{
+            background-color: <?php echo $themeColor; ?>
+        }
+
+        .site-footer-bottom {
+            background-color: <?php echo $footer_bgcolor; ?>;
+        }
+     
+    </style>    
+ 
+    <?php
+ 
+    endif;    
+}
+ 
+add_action( 'wp_head', 'ultrathread_generate_theme_option_css' );

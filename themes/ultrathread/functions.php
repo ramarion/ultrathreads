@@ -47,13 +47,15 @@ function ultrathread_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus(
+
+			register_nav_menus(
 		array(
 			'menu-primary' => esc_html__( 'Primary', 'ultrathread' ),
-			'menu-secondary' => __('Secondary', 'ultrathread' )
+			'menu-secondary' => __('Secondary', 'ultrathread' ),
+			'menu-social' => __('Social', 'ultrathread' )
 		)
 	);
-
+    
 	/*
 		* Switch default core markup for search form, comment form, and comments
 		* to output valid HTML5.
@@ -122,9 +124,9 @@ function ultrathread_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 		);
-			// Regsiter 4 footer widgets.
+			// Regsiter 6 footer widgets.
 	    register_sidebars(
-		4,
+		6,
 		array(
 			/* translators: %d: Footer Widget count. */
 			'name'          => esc_html__( 'Footer Widget %d', 'ultrathread' ),
@@ -151,6 +153,15 @@ function ultrathread_scripts() {
 	array(),
 	 ULTRATHREAD_VERSION
 	 );
+
+	
+	// Fontawesome style.
+	wp_enqueue_style( 'shopup-fontawesome-style', 
+	get_template_directory_uri() . '/assets/css/vendor/fontawesome' . $min . '.css',
+	array(),
+	'5.15.4'
+    );	
+
 	//foundations css
 	wp_enqueue_style( 
 		'foundation-style', 
@@ -158,13 +169,17 @@ function ultrathread_scripts() {
 		array(),
 		'6.7.4'
 		);
-
+	//App CSS	
 		wp_enqueue_style( 
 			'app-style', 
 			get_template_directory_uri() . '/assets/css/app.css', 
 			array()
 			);	
-
+	//WooCommerce CSS
+	wp_enqueue_style( 
+		'woocommerce-style', 
+		get_template_directory_uri() . '/assets/css/woocommerce.css'
+	);	
 	
 
 	//what-input js
@@ -184,6 +199,15 @@ function ultrathread_scripts() {
 			'6.7.4',
 			true
 			);	 
+	//foundations js		
+	wp_enqueue_script( 
+			'font-awesome-script', 
+			get_template_directory_uri() . '/assets/js/vendor/fontawesome.min.js', 
+			array( 'jquery' ),
+			'6.1.1',
+			true
+			);	 
+	 
 
  
 
@@ -213,5 +237,10 @@ require get_template_directory() . '/inc/customizer.php';
  * Block editor additions.
  */
 require get_template_directory() . '/inc/block-editor.php';
+
+/**
+ * Woo Commerce additions.
+ */
+require get_template_directory() . '/inc/woocommerce.php';
 
 

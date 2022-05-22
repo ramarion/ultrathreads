@@ -7,6 +7,8 @@ body{
     color: #f79824;
     display:flex;
     padding: 10px;
+    margin-bottom: 25px;
+
 }
 .site-description{
     font-family: 'Bebas Neue', cursive;
@@ -29,7 +31,7 @@ body{
 .site-footer-top{
     background-color:#2a752a;
     color: #f79824;
-    padding: 1.25rem 30px 1.5rem;
+    padding: 1.25rem 30px 1.5rem 60px;
 }
 
 .site-footer-bottom-wrapper {
@@ -45,7 +47,11 @@ body{
 .footer-widgets-wrapper {
 	display: grid;
 	grid-gap: 30px;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+}
+
+.footer-widget-single{
+    padding-left: 50px;
 }
 /* footer CSS end
 --------------------------------------------- */
@@ -53,7 +59,7 @@ body{
 
 .main-navigation {
     margin-top: 50px;
-    margin-left:520px;
+    margin-left:20px;
 }
 
 .menu-item a{
@@ -64,19 +70,212 @@ body{
     font-size: 19px;    
 }
 
-.menu-item-236 a{
+.menu-item a:hover{
+    color: #fff; 
+}
+
+.widget_nav_menu a{
     color: #fff;
     font-family: "Montserrat";
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 10px;
     margin-left: -18px;
-    margin-top: -8px;    
+    margin-top: -15px;  
+    width:200px;  
 }
 
 .entry-title{
     color:#003e1f;
 }
+.entry-title a{
+    color:#003e1f;
+}
+.entry-title a:hover{
+    color: #f79824;
+}
+
 .widget-title{
     color: #f79824;
 }
+
+.comment-form-comment textarea{
+    max-width: 1078px;
+    display:flex;
+    justify-content: center;
+    box-sizing: border-box;
+  border: 6px solid #003e1f;
+  border-radius: 10px;
+  font-family: 'Oswald', sans-serif;
+  color: #003e1f;
+  font-size:20px;
+  resize: none;
+}
+.comment-form-comment label {
+   font-weight: 800;
+   font-size:1.5rem;
+   font-family: Gillsans,sans-serif;
+   color:#023a1e;
+}
+
+.form-submit{display:flex;justify-content:center;border-radius: 10px;}
+
+div.wpforms-container-full .wpforms-form input[type=text], div.wpforms-container-full .wpforms-form input[type=email]{
+    border-radius: 10px;
+}
+
+.navigation {
+    display:none;
+}
+
+.comment-reply-title{
+    text-align: center;
+    font-size:xx-large;
+}
+
+div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+    border-radius: 10px;
+    width: 720px;
+    height: 250px;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field-sublabel {
+    display: block;
+    font-size: 13px;
+    float: none;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 4px 0 0 14px;
+    padding: 0;
+}
+
+.wc-block-grid__product{
+    background-color: #003e1f;
+    padding:15px;
+    border-radius: 10px;
+}
+/* review area */
+.avatar{
+    border-radius:50%;
+}
+.comment-body{
+background: #f2f2f2;
+    color: #293038;
+    margin: 0 auto;
+    padding: 5%;
+    border-radius: 5px;
+    border: 1px solid #003e1f;
+    margin-bottom: 1.2em;
+    width: 350px;
+    height:auto;
+    margin-bottom: 10px;
+}
+
+.comment-metadata a{
+    font-size: 10px;
+    color: #e34806;
+}
+
+.fn a{
+    font-family: "DM Display";
+    text-transform: uppercase;
+    font-size: medium;
+    color:#003e1f;
+}
+
+.reply a  {
+    float: right;
+    font-family: Gillsans,sans-serif;
+    color: #fff;
+    font-weight: 600;
+    background-color: #e34806;
+    padding: 5px;
+    border-radius: 18px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.says{
+    font-weight: 500;
+}
+
+.required{
+    color: red;
+}
+
+.logged-in-as a{color:#e34806;}
+
+.comment-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.woocommerce form.checkout_coupon {
+    background-color:white;
+}
+
+.woocommerce-checkout #payment div.payment_box p:last-child {
+    color:#e34806;
+}
+/* entry meta */
+.wp-block-column{
+    border-radius: 5px;
+    padding: 15px;
+}
+/* entry category links */
+.cat-links{
+    display: none;
+}
+/* entry meta */
+.entry-meta{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:600;
+
+}
+
+/* entry pots */
+.posted-on a{color:#e34806; font-weight: 700;}
+/* entry byline */
+.byline{
+    display: none;
+}
+
+.updated::before{
+    content: " / Updated On:";
+    color:black;
+    font-weight:600;
+}
+
+.updated::after{
+    color:#e34806;
+}
+
+.comments-link{display:none;}
+
+.submit{
+font-size: 100%;
+    margin: 0;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    overflow: visible;
+    padding: 0.618em 1em;
+    font-weight: 700;
+    border-radius: 20px;
+    left: auto;
+    color: #f79824;
+    background-color: #2a752a;
+    border: 0;
+    display: inline-block;
+    font-family: 'DM Serif Display', serif;
+}
+
+.submit:hover{color:#fff}
+
