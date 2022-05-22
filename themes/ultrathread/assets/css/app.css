@@ -257,3 +257,25 @@ background: #f2f2f2;
 }
 
 .comments-link{display:none;}
+
+.submit{
+font-size: 100%;
+    margin: 0;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    overflow: visible;
+    padding: 0.618em 1em;
+    font-weight: 700;
+    border-radius: 20px;
+    left: auto;
+    color: #f79824;
+    background-color: #2a752a;
+    border: 0;
+    display: inline-block;
+    font-family: 'DM Serif Display', serif;
+}
+
+.submit:hover{color:#fff}
+
