@@ -73,6 +73,104 @@ $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'ultr
 'section' => 'ultrathread_color_section',
 'settings' => 'ultrathread_footer_bgcolor'
 )));
+// close controls
+
+// THEME OPTIONS PANEL
+
+$wp_customize->add_panel(
+	'ultrathread_theme_options',
+	array(
+		'title'    => esc_html__( 'Theme Options', 'ultrathread' ),
+		'priority' => 130,
+	)
+);
+$wp_customize->add_section(
+	'ultrathread_typography',
+	array(
+		'panel' => 'ultrathread_theme_options',
+		'title' => esc_html__( 'Typography', 'ultrathread' ),
+	)
+);
+
+// Typography - Site Title Font.
+$wp_customize->add_setting(
+	'ultrathread_site_title_font',
+	array(
+		'default'           => 'DM Serif Display',
+		'sanitize_callback' => 'ultrathread_sanitize_google_fonts',
+	)
+);
+
+$wp_customize->add_control(
+	'ultrathread_site_title_font',
+	array(
+		'label'    => esc_html__( 'Site Title Font Family', 'ultrathread' ),
+		'section'  => 'ultrathread_typography',
+		'settings' => 'ultrathread_site_title_font',
+		'type'     => 'select',
+		'choices'  => ultrathread_get_all_google_font_families(),
+	)
+);
+
+// Typography - Site Description Font.
+$wp_customize->add_setting(
+	'ultrathread_site_description_font',
+	array(
+		'default'           => 'Montserrat',
+		'sanitize_callback' => 'ultrathread_sanitize_google_fonts',
+	)
+);
+
+$wp_customize->add_control(
+	'ultrathread_site_description_font',
+	array(
+		'label'    => esc_html__( 'Site Description Font Family', 'ultrathread' ),
+		'section'  => 'ultrathread_typography',
+		'settings' => 'ultrathread_site_description_font',
+		'type'     => 'select',
+		'choices'  => ultrathread_get_all_google_font_families(),
+	)
+);
+
+// Typography - Header Font.
+$wp_customize->add_setting(
+	'ultrathread_header_font',
+	array(
+		'default'           => 'DM Serif Display',
+		'sanitize_callback' => 'ultrathread_sanitize_google_fonts',
+	)
+);
+
+$wp_customize->add_control(
+	'ultrathread_header_font',
+	array(
+		'label'    => esc_html__( 'Header Font Family', 'ultrathread' ),
+		'section'  => 'ultrathread_typography',
+		'settings' => 'ultrathread_header_font',
+		'type'     => 'select',
+		'choices'  => ultrathread_get_all_google_font_families(),
+	)
+);
+
+// Typography - Body Font.
+$wp_customize->add_setting(
+	'ultrathread_body_font',
+	array(
+		'default'           => 'Montserrat',
+		'sanitize_callback' => 'ultrathread_sanitize_google_fonts',
+	)
+);
+
+$wp_customize->add_control(
+	'ultrathread_body_font',
+	array(
+		'label'    => esc_html__( 'Body Font Family', 'ultrathread' ),
+		'section'  => 'ultrathread_typography',
+		'settings' => 'ultrathread_body_font',
+		'type'     => 'select',
+		'choices'  => ultrathread_get_all_google_font_families(),
+	)
+);
 
 
 }
