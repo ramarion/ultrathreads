@@ -89,6 +89,7 @@ $wp_customize->add_section(
 	array(
 		'panel' => 'ultrathread_theme_options',
 		'title' => esc_html__( 'Typography', 'ultrathread' ),
+		'description' => 'Changes to the fonts can be made here.',
 	)
 );
 
@@ -108,7 +109,7 @@ $wp_customize->add_control(
 		'section'  => 'ultrathread_typography',
 		'settings' => 'ultrathread_site_title_font',
 		'type'     => 'select',
-		'choices'  => ultrathread_get_all_google_font_families(),
+		'choices'  => array('DM Serif Display', 'Gillsans,sans-serif','Montserrat','Bebas Neue','Oswald'),
 	)
 );
 
@@ -116,7 +117,7 @@ $wp_customize->add_control(
 $wp_customize->add_setting(
 	'ultrathread_site_description_font',
 	array(
-		'default'           => 'Montserrat',
+		'default'           => 'Bebas Neue',
 		'sanitize_callback' => 'ultrathread_sanitize_google_fonts',
 	)
 );
@@ -128,7 +129,7 @@ $wp_customize->add_control(
 		'section'  => 'ultrathread_typography',
 		'settings' => 'ultrathread_site_description_font',
 		'type'     => 'select',
-		'choices'  => ultrathread_get_all_google_font_families(),
+		'choices'  => array('DM Serif Display', 'Gillsans,sans-serif','Montserrat','Bebas Neue','Oswald'),
 	)
 );
 
@@ -148,7 +149,7 @@ $wp_customize->add_control(
 		'section'  => 'ultrathread_typography',
 		'settings' => 'ultrathread_header_font',
 		'type'     => 'select',
-		'choices'  => ultrathread_get_all_google_font_families(),
+		'choices'  => array('DM Serif Display', 'Gillsans,sans-serif','Montserrat','Bebas Neue','Oswald'),
 	)
 );
 
@@ -168,7 +169,7 @@ $wp_customize->add_control(
 		'section'  => 'ultrathread_typography',
 		'settings' => 'ultrathread_body_font',
 		'type'     => 'select',
-		'choices'  => ultrathread_get_all_google_font_families(),
+		'choices'  => array('DM Serif Display', 'Gillsans,sans-serif','Montserrat','Bebas Neue','Oswald'),
 	)
 );
 
