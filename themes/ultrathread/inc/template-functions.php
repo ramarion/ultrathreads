@@ -76,7 +76,7 @@ function ultrathread_generate_theme_option_css(){
      
     ?>
     <style type="text/css" id="ultrathread-theme-option-css">
-         
+    
         .site-header{
             background:<?php echo $header_bgcolor; ?>;
         } 
@@ -120,7 +120,7 @@ function ultrathread_generate_theme_option_css(){
 		.site-description{
 			font-family: <?php echo $site_description_font;?>;
 		}
-     
+    
     </style>    
 	
  

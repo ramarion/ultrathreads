@@ -202,13 +202,9 @@ $wp_customize->add_setting(
 $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'ultrathread_post_media',
 	array(
 	'label' => 'Media',
-'section' => 'ultrathread_posts_styles',
+    'section' => 'ultrathread_posts_styles',
 
 	)));
-
-
-
-
 
 }
 add_action( 'customize_register', 'ultrathread_customize_register' );
