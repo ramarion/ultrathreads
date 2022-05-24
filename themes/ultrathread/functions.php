@@ -243,4 +243,9 @@ require get_template_directory() . '/inc/block-editor.php';
  */
 require get_template_directory() . '/inc/woocommerce.php';
 
+/**
+ * Custom post type additons.
+ */
+require get_template_directory() . '/inc/post-type.php';
+
 
