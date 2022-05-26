@@ -387,8 +387,9 @@ div.wpforms-container-full:hover .wpforms-form button[type=submit]:hover{
 
 .woocommerce-account .woocommerce-MyAccount-content {
     border-radius: 5px;
-    background-color: white;
+    background-color: #F5F5F5;
     padding: 15px;
+    border: 2.5px solid orangered;
 }
 
 .woocommerce-MyAccount-content p{
