@@ -1,4 +1,6 @@
-function wpdocs_kantbtrue_init() {
+<?php
+
+function ultrathread_post_types() {
     $labels = array(
         'name'                  => _x( 'Events', 'Post type general name', 'ultrathread' ),
         'singular_name'         => _x( 'Event', 'Post type singular name', 'ultrathread' ),
@@ -9,7 +11,7 @@ function wpdocs_kantbtrue_init() {
         'new_item'              => __( 'New event', 'ultrathread' ),
         'edit_item'             => __( 'Edit event', 'ultrathread' ),
         'view_item'             => __( 'View event', 'ultrathread' ),
-        'all_items'             => __( 'All eventss', 'ultrathread' 
+        'all_items'             => __( 'All events', 'ultrathread' ), 
         'search_items'          => __( 'Search events', 'ultrathread' ),
         'parent_item_colon'     => __( 'Parent events:', 'ultrathread' ),
         'not_found'             => __( 'No events found.', 'ultrathread' ),
@@ -45,4 +47,4 @@ function wpdocs_kantbtrue_init() {
 
     register_post_type( 'ultrathread_event', $args );
 }
-add_action( 'init', 'wpdocs_kantbtrue_init' );
+add_action( 'init', 'ultrathread_post_types' );
