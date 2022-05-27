@@ -37,6 +37,43 @@
 							<?php dynamic_sidebar( 'footer-widget-6' ); ?>
 						</div>
 					</div>
+
+					<?php
+			$event_args = array( 
+				'post_type'   => array( 'ultrathread_event' ),
+				'post_status' => 'publish',
+				'post_per_page' => '4',
+				'orderby' => 'rand'
+			);
+
+			$event_query = new WP_Query(  $event_args );
+
+			if (  $event_query->have_posts ( ) ) {
+			?>	
+			<div class="grid-container">
+			<div class="grid-x grid-margin-x ">
+			<?php
+			/* Start the Loop */
+			while ( $event_query->have_posts() ) {
+				$event_query->the_post();
+				?>
+				<div class="cell small-4">
+					<?php
+					the_post_thumbnail();
+					the_title( '<h2 class="post-title-heading">', '</h2>' );
+					the_excerpt( '<p class="post-excerpt-paragraph">', '</p>' );
+					the_permalink();
+					
+					?>
+				</div>
+				<?php
+				}
+				wp_reset_postdata();
+				?>
+			</div>
+			</div>
+		<?php } ?>	
+
 				</div>
 			</div><!-- .footer-top -->
 		<?php endif; ?>
