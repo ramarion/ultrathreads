@@ -376,7 +376,7 @@ color:#f79824;
     padding:0 40px;
 }
 /* background for policy pages **/
-.post-3, .post-192, .post-251, .post-31, .post-25, .post-250{
+.post-3, .post-192, .post-251, .post-31, .post-25, .post-250, .post-303{
     background: white;
     margin-bottom: 30px;
     border-radius:5px;
@@ -405,6 +405,14 @@ a{
     color:#f2f2f2;
 }
 /*  post style heading for custom posts */
-excerpt{
-    color:#f2f2f2;
+.post{
+    margin-top:50px;
+}
+
+.post-303 {
+    background: white;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    width: 1200px;
+    margin: 50px auto;
 }
