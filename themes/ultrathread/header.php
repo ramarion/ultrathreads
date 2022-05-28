@@ -36,7 +36,12 @@
 				<p class="site-description"><?php echo $ultrathread_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
-
+		<?php if ( get_theme_mod( 'ultrathread_enable_search_form', true ) ) { ?>
+							<div class="header-search">
+								<?php get_search_form(); ?>
+							</div>
+						<?php } ?>
+		
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ultrathread' ); ?></button>
 			<?php
