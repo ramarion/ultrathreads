@@ -62,7 +62,7 @@
 					the_post_thumbnail();
 					the_title( '<h2 class="post-title-heading">', '</h2>' );
 					the_excerpt( '<p class="post-excerpt-paragraph">', '</p>' );
-					the_permalink();
+					echo '<li><a class="post_link" href="'.get_permalink( $id ).'">'."Read More".'</a></li>';
 					
 					?>
 				</div>
