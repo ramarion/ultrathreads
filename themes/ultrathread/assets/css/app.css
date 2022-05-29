@@ -1,7 +1,8 @@
+/* website body background style */
 body{
     background-color: #ffe4c4 ;
 }
-
+/* main nav and header area style */
 .site-header{
     background-color:#003e1f;
     color: #f79824;
@@ -10,10 +11,11 @@ body{
     margin-bottom: 25px;
 
 }
+/* site description styles */
 .site-description{
     font-family: 'Bebas Neue', cursive;
 }
-
+/*site logo styles */
 .site-branding{
     padding-left:30px;
     padding-top: 10px;
@@ -424,4 +426,16 @@ a{
     padding:5px;
     border-radius: 20px;
     font-size: smaller;
+}
+
+.post_link:hover{
+    color:#f2f2f2;
+    background-color: #f79824;
+}
+
+/* custom-posts-permalink-hover styles */
+
+/* custom-posts-archive styles */
+.ultrathread_event{
+    margin-top:40px;
 }
