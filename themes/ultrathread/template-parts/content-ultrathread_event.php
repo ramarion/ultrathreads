@@ -13,7 +13,7 @@
 	<header class="entry-header">
 		<?php
 
-echo 'This is the badman template';	
+
 		if ( ! is_singular( 'product' ) ) {
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
