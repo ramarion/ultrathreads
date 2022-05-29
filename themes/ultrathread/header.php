@@ -54,6 +54,15 @@
 				)
 			);
 		}
+// Conditional tag to see if user is logged in
+		if ( is_user_logged_in() ):
+			echo 'Welcome, registered user!';
+		else:
+			echo 'Welcome, visitor!';
+		endif;
 			?>
+
+
+
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
