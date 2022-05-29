@@ -80,26 +80,27 @@ function ultrathread_customize_register( $wp_customize ) {
 ));
 
 // Add Settings: Color 
+// Add Settings: Theme Background Color 
 $wp_customize->add_setting( 'ultrathread_theme_bgcolor', array(
 'default' => '#ffe4c4',    
 ));
-
+// Add Settings: Header Background Color 
 $wp_customize->add_setting( 'ultrathread_header_bgcolor', array(
 'default' => '#003e1f',                        
 ));
-
+// Add Settings: Footer Background Color 
 $wp_customize->add_setting( 'ultrathread_footer_bgcolor', array(
 'default' => '#003e1f',                        
 ));
-
+// Add Settings: Footer Widget Background Color 
 $wp_customize->add_setting( 'ultrathread_footer_widget_bgcolor', array(
 'default' => '#2a752a',                        
 ));
-
+// Add Settings: Site Description Color 
 $wp_customize->add_setting( 'ultrathread_site_description_color', array(
 'default' => '#f79824',                        
 ));
-
+// Add Settings: Header Menu Color 
 $wp_customize->add_setting( 'ultrathread_header_menu_color', array(
 'default' => '#f79824',                        
 ));
@@ -205,6 +206,37 @@ $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'ultr
     'section' => 'ultrathread_posts_styles',
 
 	)));
+
+// Add Section: Footer Control
+$wp_customize->add_section(
+	'ultrathread_footer_options',
+	array(
+		'title' => esc_html__( 'Footer Options', 'ultrathread' ),
+	)
+);
+// Add Settings: Footer Control	
+// Footer Options - Copyright Text.
+/* translators: 1: Year, 2: Site Title with home URL. */
+$copyright_default = sprintf( esc_html_x( 'Copyright &copy; %1$s %2$s', '1: Year, 2: Site Title with home URL', 'shopup' ), '[the-year]', '[site-link]' );
+$wp_customize->add_setting(
+	'ultrathread_footer_copyright_text',
+	array(
+		'default'           => $copyright_default,
+		'sanitize_callback' => 'wp_kses_post',
+		'transport'         => 'refresh',
+	)
+);
+
+// Add Controls: Footer Control	
+$wp_customize->add_control(
+	'ultrathread_footer_copyright_text',
+	array(
+		'label'    => esc_html__( 'Copyright Text', 'ultrathread' ),
+		'section'  => 'ultrathread_footer_options',
+		'settings' => 'ultrathread_footer_copyright_text',
+		'type'     => 'textarea',
+	)
+);
 
 }
 add_action( 'customize_register', 'ultrathread_customize_register' );
