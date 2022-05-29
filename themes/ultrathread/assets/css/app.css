@@ -391,6 +391,7 @@ color:#f79824;
 /* main content area padding **/
 .site-main{
     padding:0 40px;
+    margin-bottom: 40px;
 }
 /* background for policy pages **/
 .post-3, .post-192, .post-251, .post-31, .post-25, .post-250, .post-303{
@@ -457,7 +458,7 @@ a{
 
 /*** STYLES FOR CUSTOM POST ArCHIVE PAGES ********************************/
 .event-content{
-    background-color:#f2f2f2;
+    background-color:#fff;
     padding: 20px;
 }
 /* single post custom page styles */
@@ -886,6 +887,7 @@ color:#f79824;
 /* main content area padding **/
 .site-main{
     padding:0 40px;
+    margin-bottom: 40px;
 }
 /* background for policy pages **/
 .post-3, .post-192, .post-251, .post-31, .post-25, .post-250, .post-303{
@@ -1057,7 +1059,7 @@ body{
 /* main-menu CSS start
 --------------------------------------------- */
 .main-navigation {
-    margin-top: 50px;
+    margin-top: 65px;
     margin-left:20px;
 }
 
@@ -1088,6 +1090,7 @@ body{
 
 .entry-title{
     color:#003e1f;
+    margin-top:50px;
 }
 .entry-title a{
     color:#003e1f;
@@ -1376,6 +1379,7 @@ color:#f79824;
 /* main content area padding **/
 .site-main{
     padding:0 40px;
+    margin-bottom: 40px;
 }
 /* background for policy pages **/
 .post-3, .post-192, .post-251, .post-31, .post-25, .post-250, .post-303{
