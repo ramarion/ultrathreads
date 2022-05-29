@@ -132,3 +132,24 @@ function ultrathread_generate_theme_option_css(){
 add_action( 'wp_head', 'ultrathread_generate_theme_option_css' );
 
 
+/**
+ * Adds footer copyright text.
+ */
+function ultrathread_output_footer_copyright_content() {
+	$theme_data = wp_get_theme();
+	$search     = array( '[site-title]', '[site-link]' );
+	$replace    = array( date( 'Y' ), '<a href="' . esc_url( home_url( '/' ) ) . '">' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '</a>' );
+	/* translators: 1: Year, 2: Site Title with home URL. */
+	$copyright_default = sprintf( esc_html_x( 'Copyright &copy; %1$s %2$s', '1: Site Title, 2: Site Author with home URL', 'ultrathread' ), '[site-title]', '[site-link]' );
+	$copyright_text    = get_theme_mod( 'ultrathread_footer_copyright_text', $copyright_default );
+	$copyright_text    = str_replace( $search, $replace, $copyright_text );
+	$copyright_text   .= esc_html( ' | ' . $theme_data->get( 'Name' ) ) . '&nbsp;' . esc_html__( 'by', 'ultrathread' ) . '&nbsp;<a target="_blank" href="' . esc_url( $theme_data->get( 'AuthorURI' ) ) . '">' . esc_html( ucwords( $theme_data->get( 'Author' ) ) ) . '</a>';
+	/* translators: %s: WordPress.org URL */
+	$copyright_text .= sprintf( esc_html__( ' | Powered by %s', 'ultrathread' ), '<a href="' . esc_url( __( 'https://wordpress.org/', 'ultrathread' ) ) . '" target="_blank">WordPress</a>. ' );
+	?>
+	<div class="copyright">
+		<span><?php echo wp_kses_post( $copyright_text ); ?></span>					
+	</div>
+	<?php
+}
+add_action( 'ultrathread_footer_copyright', 'ultrathread_output_footer_copyright_content' );
