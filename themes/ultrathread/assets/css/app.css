@@ -70,7 +70,7 @@ body{
 --------------------------------------------- */
 .main-navigation {
     margin-top: 20px;
-    
+    width:100px;
    
 }
 
@@ -513,13 +513,17 @@ body{
 /* site description styles */
 .site-description{
     font-family: 'Bebas Neue', cursive;
+    font-size: 12px;
+    text-align: center;
     
 }
 /*site logo styles */
 .site-branding{
     padding-left:30px;
-    padding-top: 10px;
+    padding-top: 30px;
 }
+
+.custom-logo{width:400px}
 
 /* footer CSS start
 --------------------------------------------- */
@@ -561,8 +565,9 @@ body{
 /* main-menu CSS start
 --------------------------------------------- */
 .main-navigation {
-    margin-top: 50px;
-    margin-left:20px;
+    margin-top: 20px;
+    
+   
 }
 
 .menu-item a{
@@ -570,7 +575,7 @@ body{
     font-family: "Montserrat";
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 19px;    
+    font-size: 9px;  
 }
 
 .menu-item a:hover{
@@ -853,7 +858,7 @@ color:#f79824;
 .search-field{
     border-radius:20px;
     padding-left: 15px;
-    width:auto;
+    width:120px;
 }
 /* search button */
 .search-submit{
@@ -861,11 +866,12 @@ color:#f79824;
     color: #f79824;
     font-family: 'DM Serif Display', serif;
     border-radius: 27px;
-    border: 5px solid white;
+    border: 1px solid white;
     padding: 5px;
-    width: 194px;
+    width: 120px;
     font-size: 20px;
 }
+
 
 /* search results of null */
 .no-results.not-found{
@@ -969,7 +975,14 @@ a{
     
 }
 
-  }
+/* product summary area */
+.woocommerce-page div.product div.summary {
+    
+    width: 100%;
+    
+}
+
+}
 
 /* TABLET AREA CSS ENDS
 --------------------------------------------- */
@@ -991,6 +1004,9 @@ body{
     margin-bottom: 25px;
 
 }
+/* website logo */
+.custom-logo{width:150px}
+
 /* site description styles */
 .site-description{
     font-family: 'Bebas Neue', cursive;
