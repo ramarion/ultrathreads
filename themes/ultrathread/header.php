@@ -38,10 +38,10 @@
 		</div><!-- .site-branding -->
 		<?php if ( get_theme_mod( 'ultrathread_enable_search_form', true ) ) { ?>
 							<div class="header-search">
-								<?php get_search_form(); ?>
+								<?php get_search_form(); ?> <!-- search bar -->
 							</div>
 						<?php } ?>
-		
+		<!-- navigation menu -->
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ultrathread' ); ?></button>
 			<?php
