@@ -217,7 +217,7 @@ $wp_customize->add_section(
 // Add Settings: Footer Control	
 // Footer Options - Copyright Text.
 /* translators: 1: Year, 2: Site Title with home URL. */
-$copyright_default = sprintf( esc_html_x( 'Copyright &copy; %1$s %2$s', '1: Year, 2: Site Title with home URL', 'shopup' ), '[the-year]', '[site-link]' );
+$copyright_default = sprintf( esc_html_x( 'Theme: %1$s by %2$s.', '1: Site Title, 2: Site Author with home URL','ultrathread' ), '[site-title]', '[site-link]' );
 $wp_customize->add_setting(
 	'ultrathread_footer_copyright_text',
 	array(
