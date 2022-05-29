@@ -1,7 +1,11 @@
+/* MOBILE AREA CSS START
+--------------------------------------------- */
+@media only screen and (max-width: 600px) {
 /* website body background style */
 body{
     background-color: #ffe4c4 ;
 }
+
 /* main nav and header area style */
 .site-header{
     background-color:#003e1f;
@@ -14,6 +18,502 @@ body{
 /* site description styles */
 .site-description{
     font-family: 'Bebas Neue', cursive;
+    font-size: 12px;
+    text-align: center;
+    
+}
+/*site logo styles */
+.site-branding{
+    padding-left:30px;
+    padding-top: 30px;
+}
+
+.custom-logo{width:200px}
+/* footer CSS start
+--------------------------------------------- */
+.site-footer-bottom{
+    background-color:#003e1f;
+    color: #f79824;
+    text-align:center;
+    padding: 15px 0;
+}
+
+.site-footer-top{
+    background-color:#2a752a;
+    color: #f79824;
+    padding: 1.25rem 20px 1.5rem 0;
+}
+
+.site-footer-bottom-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.site-info a{text-decoration: none; color: #fff;}
+
+.footer-widgets-wrapper {
+	display: grid;
+	
+	grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
+}
+
+.footer-widget-single{
+    padding-left: 50px;
+}
+/* footer CSS end
+--------------------------------------------- */
+
+/* main-menu CSS start
+--------------------------------------------- */
+.main-navigation {
+    margin-top: 20px;
+    
+   
+}
+
+.menu-item a{
+    color: #f79824;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 9px;  
+}
+
+.menu-item a:hover{
+    color: #fff; 
+}
+
+.widget_nav_menu a{
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-left: -18px;
+    margin-top: -15px;  
+    width:200px;  
+}
+/* main menu CSS end
+--------------------------------------------- */
+
+.entry-title{
+    color:#003e1f;
+}
+.entry-title a{
+    color:#003e1f;
+}
+.entry-title a:hover{
+    color: #f79824;
+}
+
+.widget-title{
+    color: #f79824;
+}
+/* COMMENT TEXT AREA
+--------------------------------------------- */
+.comment-form-comment textarea{
+    max-width: 1078px;
+    display:flex;
+    justify-content: center;
+    box-sizing: border-box;
+  border: 6px solid #003e1f;
+  border-radius: 10px;
+  font-family: 'Oswald', sans-serif;
+  color: #003e1f;
+  font-size:20px;
+  resize: none;
+}
+.comment-form-comment label {
+   font-weight: 800;
+   font-size:1.5rem;
+   font-family: Gillsans,sans-serif;
+   color:#023a1e;
+}
+
+.form-submit{display:flex;justify-content:center;border-radius: 10px;}
+
+div.wpforms-container-full .wpforms-form input[type=text], div.wpforms-container-full .wpforms-form input[type=email]{
+    border-radius: 10px;
+}
+
+.navigation {
+    display:none;
+}
+
+.comment-reply-title{
+    text-align: center;
+    font-size:xx-large;
+}
+
+div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+    border-radius: 10px;
+    width: 720px;
+    height: 250px;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field-sublabel {
+    display: block;
+    font-size: 13px;
+    float: none;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 4px 0 0 14px;
+    padding: 0;
+}
+
+.wc-block-grid__product{
+    background-color: #003e1f;
+    padding:15px;
+    border-radius: 10px;
+}
+/* review area */
+.avatar{
+    border-radius:50%;
+}
+.comment-body{
+background: #f2f2f2;
+    color: #293038;
+    margin: 0 auto;
+    padding: 5%;
+    border-radius: 5px;
+    border: 1px solid #003e1f;
+    margin-bottom: 1.2em;
+    width: 350px;
+    height:auto;
+    margin-bottom: 10px;
+}
+
+.comment-metadata a{
+    font-size: 10px;
+    color: #e34806;
+}
+
+.fn a{
+    font-family: "DM Display";
+    text-transform: uppercase;
+    font-size: medium;
+    color:#003e1f;
+}
+
+.reply a  {
+    float: right;
+    font-family: Gillsans,sans-serif;
+    color: #fff;
+    font-weight: 600;
+    background-color: #e34806;
+    padding: 5px;
+    border-radius: 18px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+}
+/* author comment styles */
+.says{
+    font-weight: 500;
+}
+
+.required{
+    color: red;
+}
+/* logged in link */
+.logged-in-as a{color:#e34806;}
+
+.comment-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+/* check out coupon */
+.woocommerce form.checkout_coupon {
+    background-color:white;
+}
+
+.woocommerce-checkout #payment div.payment_box p:last-child {
+    color:#e34806;
+}
+/* entry meta */
+.wp-block-column{
+    border-radius: 5px;
+    padding: 15px;
+}
+/* entry category links */
+.cat-links{
+    display: none;
+}
+/* entry meta */
+.entry-meta{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:600;
+
+}
+
+/* entry pots */
+.posted-on a{color:#e34806; font-weight: 700;}
+/* entry byline */
+.byline{
+    display: none;
+}
+
+.updated::before{
+    content: " / Updated On:";
+    color:black;
+    font-weight:600;
+}
+
+.updated::after{
+    color:#e34806;
+}
+
+.comments-link{display:none;}
+/* order submit */
+.submit{
+font-size: 100%;
+    margin: 0;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    overflow: visible;
+    padding: 0.618em 1em;
+    font-weight: 700;
+    border-radius: 20px;
+    left: auto;
+    color: #f79824;
+    background-color: #2a752a;
+    border: 0;
+    display: inline-block;
+    font-family: 'DM Serif Display', serif;
+}
+
+.submit:hover{color:#fff}
+/* product view area */
+.wc-block-grid__product-title {
+    font-family: 'DM Serif Display', serif;
+    color: #f79824;
+    font-weight: 700;
+    font-size: xx-large;
+}
+.wc-block-grid__product-title:hover {
+    color:white;
+}
+
+.wc-block-grid__product-price {
+font-family: 'Oswald';
+color:white;
+}
+
+.wc-block-grid__product-onsale { 
+    color: #fff;
+    background: #e34806;
+    position: absolute;
+    border-radius: 20px;
+    font-family: 'Oswald';
+}
+
+.wc-block-featured-product{
+    border-radius: 20px;
+    border: 5px solid #e34806;
+}
+
+.wc-block-featured-product__price{
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-size:large;
+    font-weight:bold;
+}
+
+.wc-block-featured-product__description{
+    font-style: italic;
+}
+.wc-block-featured-product .wc-block-featured-product__title{
+    color: #f79824;
+}
+/* product view area - add to cart styles */
+.added_to_cart.wc-forward{
+    color: #fff;
+    display:flex;
+    position: absolute;
+    left:120px;
+}
+
+/* product view area ENDS */
+.widget_nav_menu a:hover {
+color:#f79824;
+}
+
+.wpforms-confirmation-container-full, div[submit-success]>.wpforms-confirmation-container-full:not(.wpforms-redirection-message) {
+    background: #fefefe;
+    border: 5px solid #b4d39b;
+    border-radius: 10px;
+    color: black;
+}
+/* search bar **/
+.header-search{
+    margin-left: 33px;
+    margin-right: 61px;
+    margin-top: 54px;
+}
+/* search box */
+.search-field{
+    border-radius:20px;
+    padding-left: 15px;
+    width:120px;
+}
+/* search button */
+.search-submit{
+    background: #003e1f;
+    color: #f79824;
+    font-family: 'DM Serif Display', serif;
+    border-radius: 27px;
+    border: 1px solid white;
+    padding: 5px;
+    width: 120px;
+    font-size: 20px;
+}
+
+/* search results of null */
+.no-results.not-found{
+    background: white;
+    padding:20px;
+
+}
+/* title for pages **/
+.page-title{
+    color:#003e1f;
+}
+/* main content area padding **/
+.site-main{
+    padding:0 40px;
+}
+/* background for policy pages **/
+.post-3, .post-192, .post-251, .post-31, .post-25, .post-250, .post-303{
+    background: white;
+    margin-bottom: 30px;
+    border-radius:5px;
+}
+/* contact form style **/
+.post-31{
+    width: auto;
+    padding: 30px;
+}
+/* link color **/
+
+a{
+    color: #e34806;
+}
+/*  grid cell style for custom posts */
+.grid-margin-x>.small-4 {
+    width: calc(33.33333% -5rem);
+    background-color:#003e1f;
+    padding:10px;
+    border-radius:5px;
+    margin-top: 15px;
+}
+/*  post style heading for custom posts */
+.post-title-heading{
+    font-size: 19px;
+    color:#f2f2f2;
+}
+/*  post style heading for custom posts */
+.post{
+    margin-top:50px;
+}
+
+.post-303 {
+    background: white;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    width: 1200px;
+    margin: 50px auto;
+}
+/* custom-posts-permalink styles */
+.post_link{
+    background-color:#2a752a;
+    color: #f79824;
+    font-family: 'DM Serif Display', serif;
+    padding:5px;
+    border-radius: 20px;
+    font-size: smaller;
+}
+
+.post_link:hover{
+    color:#010101;
+    background-color: #f79824;
+}
+
+/* custom-posts-permalink-hover styles */
+
+/* custom-posts-archive styles */
+.ultrathread_event{
+    margin-top:40px;
+}
+
+/*** STYLES FOR CUSTOM POST ArCHIVE PAGES ********************************/
+.event-content{
+    background-color:#f2f2f2;
+    padding: 20px;
+}
+/* single post custom page styles */
+.single-post{
+    background-color:#fff;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+/* styles the links for the edit button */
+.edit-link a{
+    background-color:#2a752a;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+    padding:8px;
+    font-size: medium;
+    width: 250px;
+    margin-bottom:55px;
+}
+.edit-link a:hover{
+    background-color:#f79824;
+    color: black;
+    
+}
+/* product summary area */
+.woocommerce-page div.product div.summary {
+    width:100%;
+}
+
+}
+
+/* MOBILE AREA CSS ENDS
+--------------------------------------------- */
+
+
+
+/* TABLET AREA CSS START
+--------------------------------------------- */
+@media only screen and (min-width: 600px) {
+/* website body background style */
+body{
+    background-color: #ffe4c4 ;
+}
+
+/* main nav and header area style */
+.site-header{
+    background-color:#003e1f;
+    color: #f79824;
+    display:flex;
+    padding: 10px;
+    margin-bottom: 25px;
+
+}
+/* site description styles */
+.site-description{
+    font-family: 'Bebas Neue', cursive;
+    
 }
 /*site logo styles */
 .site-branding{
@@ -58,7 +558,8 @@ body{
 /* footer CSS end
 --------------------------------------------- */
 
-
+/* main-menu CSS start
+--------------------------------------------- */
 .main-navigation {
     margin-top: 50px;
     margin-left:20px;
@@ -86,6 +587,8 @@ body{
     margin-top: -15px;  
     width:200px;  
 }
+/* main menu CSS end
+--------------------------------------------- */
 
 .entry-title{
     color:#003e1f;
@@ -100,7 +603,8 @@ body{
 .widget-title{
     color: #f79824;
 }
-
+/* COMMENT TEXT AREA
+--------------------------------------------- */
 .comment-form-comment textarea{
     max-width: 1078px;
     display:flex;
@@ -399,7 +903,6 @@ a{
     background-color:#003e1f;
     padding:10px;
     border-radius:5px;
-
 }
 /*  post style heading for custom posts */
 .post-title-heading{
@@ -464,4 +967,485 @@ a{
     background-color:#f79824;
     color: black;
     
+}
+
+  }
+
+/* TABLET AREA CSS ENDS
+--------------------------------------------- */
+
+/* DESKTOP AREA CSS START
+--------------------------------------------- */
+@media only screen and (min-width: 768px) {
+
+/* website body background style */
+body{
+    background-color: #ffe4c4 ;
+}
+/* main nav and header area style */
+.site-header{
+    background-color:#003e1f;
+    color: #f79824;
+    display:flex;
+    padding: 10px;
+    margin-bottom: 25px;
+
+}
+/* site description styles */
+.site-description{
+    font-family: 'Bebas Neue', cursive;
+}
+/*site logo styles */
+.site-branding{
+    padding-left:30px;
+    padding-top: 10px;
+}
+
+/* footer CSS start
+--------------------------------------------- */
+.site-footer-bottom{
+    background-color:#003e1f;
+    color: #f79824;
+    text-align:center;
+    padding: 15px 0;
+}
+
+.site-footer-top{
+    background-color:#2a752a;
+    color: #f79824;
+    padding: 1.25rem 30px 1.5rem 60px;
+}
+
+.site-footer-bottom-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.site-info a{text-decoration: none; color: #fff;}
+
+.footer-widgets-wrapper {
+	display: grid;
+	
+	grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+}
+
+.footer-widget-single{
+    padding-left: 50px;
+}
+/* footer CSS end
+--------------------------------------------- */
+
+/* main-menu CSS start
+--------------------------------------------- */
+.main-navigation {
+    margin-top: 50px;
+    margin-left:20px;
+}
+
+.menu-item a{
+    color: #f79824;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 19px;    
+}
+
+.menu-item a:hover{
+    color: #fff; 
+}
+
+.widget_nav_menu a{
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-left: -18px;
+    margin-top: -15px;  
+    width:200px;  
+}
+/* main menu CSS end
+--------------------------------------------- */
+
+.entry-title{
+    color:#003e1f;
+}
+.entry-title a{
+    color:#003e1f;
+}
+.entry-title a:hover{
+    color: #f79824;
+}
+
+.widget-title{
+    color: #f79824;
+}
+/* COMMENT TEXT AREA
+--------------------------------------------- */
+.comment-form-comment textarea{
+    max-width: 1078px;
+    display:flex;
+    justify-content: center;
+    box-sizing: border-box;
+  border: 6px solid #003e1f;
+  border-radius: 10px;
+  font-family: 'Oswald', sans-serif;
+  color: #003e1f;
+  font-size:20px;
+  resize: none;
+}
+.comment-form-comment label {
+   font-weight: 800;
+   font-size:1.5rem;
+   font-family: Gillsans,sans-serif;
+   color:#023a1e;
+}
+
+.form-submit{display:flex;justify-content:center;border-radius: 10px;}
+
+div.wpforms-container-full .wpforms-form input[type=text], div.wpforms-container-full .wpforms-form input[type=email]{
+    border-radius: 10px;
+}
+
+.navigation {
+    display:none;
+}
+
+.comment-reply-title{
+    text-align: center;
+    font-size:xx-large;
+}
+
+div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+    border-radius: 10px;
+    width: 720px;
+    height: 250px;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field-sublabel {
+    display: block;
+    font-size: 13px;
+    float: none;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 4px 0 0 14px;
+    padding: 0;
+}
+
+.wc-block-grid__product{
+    background-color: #003e1f;
+    padding:15px;
+    border-radius: 10px;
+}
+/* review area */
+.avatar{
+    border-radius:50%;
+}
+.comment-body{
+background: #f2f2f2;
+    color: #293038;
+    margin: 0 auto;
+    padding: 5%;
+    border-radius: 5px;
+    border: 1px solid #003e1f;
+    margin-bottom: 1.2em;
+    width: 350px;
+    height:auto;
+    margin-bottom: 10px;
+}
+
+.comment-metadata a{
+    font-size: 10px;
+    color: #e34806;
+}
+
+.fn a{
+    font-family: "DM Display";
+    text-transform: uppercase;
+    font-size: medium;
+    color:#003e1f;
+}
+
+.reply a  {
+    float: right;
+    font-family: Gillsans,sans-serif;
+    color: #fff;
+    font-weight: 600;
+    background-color: #e34806;
+    padding: 5px;
+    border-radius: 18px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.says{
+    font-weight: 500;
+}
+
+.required{
+    color: red;
+}
+
+.logged-in-as a{color:#e34806;}
+
+.comment-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.woocommerce form.checkout_coupon {
+    background-color:white;
+}
+
+.woocommerce-checkout #payment div.payment_box p:last-child {
+    color:#e34806;
+}
+/* entry meta */
+.wp-block-column{
+    border-radius: 5px;
+    padding: 15px;
+}
+/* entry category links */
+.cat-links{
+    display: none;
+}
+/* entry meta */
+.entry-meta{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:600;
+
+}
+
+/* entry pots */
+.posted-on a{color:#e34806; font-weight: 700;}
+/* entry byline */
+.byline{
+    display: none;
+}
+
+.updated::before{
+    content: " / Updated On:";
+    color:black;
+    font-weight:600;
+}
+
+.updated::after{
+    color:#e34806;
+}
+
+.comments-link{display:none;}
+
+.submit{
+font-size: 100%;
+    margin: 0;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    overflow: visible;
+    padding: 0.618em 1em;
+    font-weight: 700;
+    border-radius: 20px;
+    left: auto;
+    color: #f79824;
+    background-color: #2a752a;
+    border: 0;
+    display: inline-block;
+    font-family: 'DM Serif Display', serif;
+}
+
+.submit:hover{color:#fff}
+
+.wc-block-grid__product-title {
+    font-family: 'DM Serif Display', serif;
+    color: #f79824;
+    font-weight: 700;
+    font-size: xx-large;
+}
+.wc-block-grid__product-title:hover {
+    color:white;
+}
+
+.wc-block-grid__product-price {
+font-family: 'Oswald';
+color:white;
+}
+
+.wc-block-grid__product-onsale { 
+    color: #fff;
+    background: #e34806;
+    position: absolute;
+    border-radius: 20px;
+    font-family: 'Oswald';
+}
+
+.wc-block-featured-product{
+    border-radius: 20px;
+    border: 5px solid #e34806;
+}
+
+.wc-block-featured-product__price{
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-size:large;
+    font-weight:bold;
+}
+
+.wc-block-featured-product__description{
+    font-style: italic;
+}
+.wc-block-featured-product .wc-block-featured-product__title{
+    color: #f79824;
+}
+
+.added_to_cart.wc-forward{
+    color: #fff;
+    display:flex;
+    position: absolute;
+    left:120px;
+}
+.widget_nav_menu a:hover {
+color:#f79824;
+}
+
+.wpforms-confirmation-container-full, div[submit-success]>.wpforms-confirmation-container-full:not(.wpforms-redirection-message) {
+    background: #fefefe;
+    border: 5px solid #b4d39b;
+    border-radius: 10px;
+    color: black;
+}
+/* search bar **/
+.header-search{
+    margin-left: 33px;
+    margin-right: 61px;
+    margin-top: 54px;
+}
+/* search box */
+.search-field{
+    border-radius:20px;
+    padding-left: 15px;
+    width:auto;
+}
+/* search button */
+.search-submit{
+    background: #003e1f;
+    color: #f79824;
+    font-family: 'DM Serif Display', serif;
+    border-radius: 27px;
+    border: 5px solid white;
+    padding: 5px;
+    width: 194px;
+    font-size: 20px;
+}
+
+/* search results of null */
+.no-results.not-found{
+    background: white;
+    padding:20px;
+
+}
+/* title for pages **/
+.page-title{
+    color:#003e1f;
+}
+/* main content area padding **/
+.site-main{
+    padding:0 40px;
+}
+/* background for policy pages **/
+.post-3, .post-192, .post-251, .post-31, .post-25, .post-250, .post-303{
+    background: white;
+    margin-bottom: 30px;
+    border-radius:5px;
+}
+/* contact form style **/
+.post-31{
+    width: auto;
+    padding: 30px;
+}
+/* link color **/
+
+a{
+    color: #e34806;
+}
+/*  grid cell style for custom posts */
+.grid-margin-x>.small-4 {
+    width: calc(43.33333% - 16rem);
+    background-color:#003e1f;
+    padding:10px;
+    border-radius:5px;
+}
+/*  post style heading for custom posts */
+.post-title-heading{
+    font-size: 19px;
+    color:#f2f2f2;
+}
+/*  post style heading for custom posts */
+.post{
+    margin-top:50px;
+}
+
+.post-303 {
+    background: white;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    width: 1200px;
+    margin: 50px auto;
+}
+/* custom-posts-permalink styles */
+.post_link{
+    background-color:#2a752a;
+    color: #f79824;
+    font-family: 'DM Serif Display', serif;
+    padding:5px;
+    border-radius: 20px;
+    font-size: smaller;
+}
+
+.post_link:hover{
+    color:#010101;
+    background-color: #f79824;
+}
+
+/* custom-posts-permalink-hover styles */
+
+/* custom-posts-archive styles */
+.ultrathread_event{
+    margin-top:40px;
+}
+
+/*** STYLES FOR CUSTOM POST ArCHIVE PAGES ********************************/
+.event-content{
+    background-color:#f2f2f2;
+    padding: 20px;
+}
+/* single post custom page styles */
+.single-post{
+    background-color:#fff;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+/* styles the links for the edit button */
+.edit-link a{
+    background-color:#2a752a;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+    padding:8px;
+    font-size: medium;
+    width: 250px;
+}
+.edit-link a:hover{
+    background-color:#f79824;
+    color: black;
+    
+}
 }
