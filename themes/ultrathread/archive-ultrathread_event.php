@@ -19,10 +19,10 @@ get_header();
 				
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
 				the_archive_description( '<div class="archive-description">', '</div>' );
-				echo 'This is the archive recipe template';	
+				
 				?>
 			</header><!-- .page-header -->
-
+			<div class="event-content"><!-- body-content area for event posts -->
 			<?php
 			
 			/* Start the Loop */
@@ -30,7 +30,7 @@ get_header();
 				
 				
 				the_post();
-			     
+			
 				/*
 				 * Include the Post-Type-specific template for the content.
 				 * If you want to override this in a child theme, then include a file
@@ -50,7 +50,7 @@ get_header();
 		endif;
 		
 		?>
-
+	</div>
 
 	</main><!-- #main -->
 
