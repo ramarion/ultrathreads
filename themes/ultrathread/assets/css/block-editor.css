@@ -104,21 +104,21 @@ h6.wp-block-heading {
     font-family: 'DM Serif Display', serif;
     color: #000;
 }
-
+/* styles the block images */
 .wp-block-image.is-style-default{
     width:1200px;
     border-top-left-radius: 40px; 
     border-bottom-right-radius: 40px; 
 }
-
+/* styles the fonts for the paragraphs */
 .wp-block-paragraph{
     font-family: Helvetica, sans-serif; 
 }
-
+/* default syles for social links */
 .wp-block-social-links:not(.is-style-logos-only) .wp-social-link{
     background-color: #000;
 }
-
+/* add styles for pullquotes */
 .wp-block-pullquote{
     border-top: 4px solid;
     border-bottom: 4px solid;
@@ -130,7 +130,7 @@ h6.wp-block-heading {
     background-color: #003e1f !important;
     font-family: 'DM Serif Display', serif;
 }
-
+/* adds a quotation mark before a quote */
 .wp-block-pullquote::before {
     content: '"';
     display: block;
@@ -140,7 +140,7 @@ h6.wp-block-heading {
     position: relative;
     height: 0;
     }
-
+/* adds a quotation mark after a quote */
     .wp-block-pullquote::after {
         content: '"';
         display: block;
@@ -150,45 +150,46 @@ h6.wp-block-heading {
         position: relative;
         height: 0;
         }
-
+/* adds font style in pullquote */        
         .wp-block-pullquote .wp-block-pullquote__citation {
             font-family: "Montserrat";
         }
-    
+     /* default WP block separator style*/
     .wp-block-separator.is-style-default{
         
         border-top: 4px solid #003e1f;
         max-width: 300px;
     }    
 
-
+     /* wide WP block separator style*/
     .wp-block-separator.is-style-wide{
         
         border-bottom: 6px solid #003e1f;
         
     } 
-    
+     /* default WP block media-text text */
     .wp-block-media-text {
         grid-template-columns: 1fr 50%;
         border-radius: 30px;
     }
-    
+    /* default WP block media-text image */
     .wp-block-media-text__media img{
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
     }
-
+    /* default WP login  */
     .wp-block-loginout a{
         text-decoration: none;
         font-family: 'DM Serif Display', serif;
         font-size:1.2rem;
     }
-
+    /* styles for WP default search inputfield */
     .wp-block-search__input{
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
         font-family: 'DM Serif Display', serif;
     }
+    /* styles for default search button */
     .wp-block-search__button {
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -199,39 +200,41 @@ h6.wp-block-heading {
         line-height: inherit;
         height:40px;
     }
-
+    /* disables search bar for block area */
     .wp-block-search__label {
         display: none;
     }
 /* WP BLOCK ENDS
 --------------------------------------------- */
+
+/* all content placed in this area are size within 1200px */
 .entry-content > * {
     max-width:1200px;
     margin-left:auto;
     margin-right:auto;
 }
-
+/* all entry headers are sized within 1200px */
 .entry-header > * {
     max-width:1200px;
     margin-left:auto;
     margin-right:auto;
 }
-
+/* set max width for default block setting */
 .alignwide{
     max-width:1200px;
 }
-
+/* set max width for default block setting */
 .alignfull{
     width:100%;
 }
 
-
+/* sizing for custom logo */
 .custom-logo{width:100px;}
-
+/* disable menu aspect */
 .menu-toggle{
     display:none;
 }
-
+/* caption area styles for image */
 .wp-block-image figcaption {
    font-family: "Helvetica Neue";
    font-weight: 300;
