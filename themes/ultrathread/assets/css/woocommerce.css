@@ -1,4 +1,4 @@
-/*---- woocommercer css -----*/
+/*---- woocommercer add to cart button -----*/
 .woocommerce #respond input#submit.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
     background-color: #2a752a;
     font-family: 'DM Serif Display', serif;
@@ -9,16 +9,17 @@
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 0px;
 }
+/*---- woocommercer add to cart button:hover -----*/
 .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
     background-color: #003e1f;
     color: #fbfbfb;
     
 }
-
+/*---- woocommerce respond comments and button -----*/
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
     font-family: 'DM Serif Display', serif;
 }
-
+/*---- woocommerce cart -----*/
 .woocommerce #content div.product .summary .cart .quantity .qty, .woocommerce div.product .summary .cart .quantity .qty, .woocommerce-page #content div.product .summary .cart .quantity .qty, .woocommerce-page div.product .summary .cart .quantity .qty {
     padding: 0.6em;
     background-color: #f2f2f2;
@@ -161,6 +162,10 @@
     clear: both;
     background-color: white;
 }
+/*---- woocommerce tabs end -----*/
+
+
+/*---- woocommerce product details/description -----*/
 
 .woocommerce-product-details__short-description {
     font-family: 'Roboto';
@@ -177,6 +182,7 @@
     font-weight: 600;
     font-family: 'Oswald';
 }
+/*---- styles woocommerce content area -----*/
 
 .woocommerce #content div.product .summary .cart .quantity .qty, .woocommerce div.product .summary .cart .quantity .qty, .woocommerce-page #content div.product .summary .cart .quantity .qty, .woocommerce-page div.product .summary .cart .quantity .qty {
     font-family: 'Oswald';
@@ -186,6 +192,8 @@
 .woocommerce-info::before {
     color: #003e1f;
 }
+/*---- woocommerce information area styles for product -----*/
+
 .woocommerce-info {
     border-top: 6px solid #003e1f;
     border-bottom: 6px solid #003e1f;
@@ -201,6 +209,7 @@
     border-radius:20px;
     padding-left:20px;
 }
+/*---- woocommerce form label styles -----*/
 
 .woocommerce form .form-row label {
     font-family: Gillsans,sans-serif;
@@ -253,23 +262,29 @@
     color:#e34806;
     font-weight: bold;
 }
+/*---- woocommerce SHIPPING AREA -----*/
+/* styles for the price,quantity and subtoatl of a product */
 .product-price, .product-quantity, .product-subtotal{
     font-family: Roboto,sans-serif;
     font-weight: bold;
 }
+/* styles for shpping methods and locations */
 .woocommerce-shipping-destination, .woocommerce-shipping-methods{font-family: Roboto,sans-serif;}
+
+/* styles for the shipping calculator  link */
 
 .woocommerce-shipping-calculator a{color:#e34806; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold;}
 
+/* styles for method shipping label */
 .shipping_method label{
     font-family: Roboto,sans-serif;
 }
-
+/* styles for product area tables */
 td.actions .input-text, .woocommerce table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text {
     width: 112px;
     border-radius: 9px;
 }
-
+/* styles for WP form */
 div.wpforms-container-full .wpforms-form .wpforms-field-label-inline {
     cursor: pointer;
     color: #e34806;
@@ -297,6 +312,10 @@ div.wpforms-container-full:hover .wpforms-form button[type=submit]:hover{
     color: #fff;
     font-family: 'DM Serif Display';
 }
+/* styles for WP form ENDS*/
+
+/*---- woocommerce SHIPPING AREA ENDS -----*/
+
 /* button removal */
 .woocommerce a.remove {
     display: block;
@@ -330,6 +349,7 @@ div.wpforms-container-full:hover .wpforms-form button[type=submit]:hover{
     font-weight: 600;
     background-color: #fff;
 }
+/* styles for WOOCOMMERCE DASHBOARD AREA BEGINS */
 .woocommerce .woocommerce-MyAccount-navigation ul li.is-active a {
     color: white;
     background-color: #e34806;
@@ -357,6 +377,10 @@ div.wpforms-container-full:hover .wpforms-form button[type=submit]:hover{
     display: inline-block;
     margin-right: 10px;
 }
+/* styles for WOOCOMMERCE NAVIGATION AREA ENDS */
+
+
+/* styles for WOOCOMMERCE DASHBOARD AREA BEGINS */
 
 /* customer dashboards*/
 .woocommerce .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--dashboard a::before {
@@ -383,23 +407,23 @@ div.wpforms-container-full:hover .wpforms-form button[type=submit]:hover{
 .woocommerce .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--customer-logout a::before {
     content: "\f2f5";
 }
-
-
+/* customer account-content */
 .woocommerce-account .woocommerce-MyAccount-content {
     border-radius: 5px;
     background-color: #F5F5F5;
     padding: 15px;
     border: 2.5px solid orangered;
 }
-
+/* customer account entry */
 .woocommerce-MyAccount-content p{
     font-weight:600;
 }
-
+/* customer account details address area */
 .woocommerce .woocommerce-customer-details address {
     border: 3px solid rgba(0,0,0,.1);
     
 }
+/* customer order details */
 
 .order-number,.order-date,.order-status{
     background-color:#f79824;
@@ -411,6 +435,7 @@ legend{
     font-size: medium;
     font-weight: 600;
 }
+/* WOOCOMMERCE LOGIN FORM */
 
 .woocommerce form.login {
         border: 3px solid green;
@@ -420,7 +445,8 @@ legend{
         text-align: left;
         border-radius: 5px;
         
-    }    
+    }  
+/* WOOCOMMERCE REGISTER FORM */
 .woocommerce form.register {
         border: 3px solid green;
         background-color: white;
@@ -431,9 +457,9 @@ legend{
         
     }    
 .woocommerce form.register p{
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }    
-
+/* WOOCOMMERCE lost password area*/
 .woocommerce-LostPassword a{
     color:#e34806;
     font-weight: 600;
@@ -468,7 +494,7 @@ legend{
     background-color: white;
     border-radius: 5px;
 }
-
+/* thank you notice */
 .woocommerce-thankyou-order-received{
     color: #e34806;
     font-weight:600;
@@ -477,7 +503,7 @@ legend{
 p{font-weight:700;}
 
 .woocommerce-terms-and-conditions-link{color: #e34806;}
-
+/* woocommerce product summary */
 .woocommerce-page div.product div.summary {
     float: right;
     width: 48%;
@@ -486,11 +512,11 @@ p{font-weight:700;}
     padding: 15px;
     border-radius: 8px;
 }
-
+/* comment area for products */
 .comments-area{display: flex;
     flex-direction: column;
     align-items: center;}
-
+/* add to cart button woocommerce products */
     .woocommerce a.added_to_cart {
         padding-top: 0; 
         display: flex;
@@ -500,14 +526,15 @@ p{font-weight:700;}
         z-index: 1;
         font-weight: 600;
     }    
+    /* add to cart button hover */
     .woocommerce a.added_to_cart:hover {
         color: #fea437;
     }    
-
+    /* product table area styles */
     .woocommerce-message,.product-intro__description-table-item {
         font-weight: 600;
     }
-/* sort */
+/* category sorting */
 .woocommerce .woocommerce-ordering select {
     vertical-align: top;
     color: green;
